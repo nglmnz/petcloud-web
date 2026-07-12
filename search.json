@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "proyecto.html",
+    "href": "proyecto.html",
+    "title": "El proyecto",
+    "section": "",
+    "text": "La entrada en vigencia de las metas de recolección de la Ley 20.920 impone a municipios y Sistemas de Gestión una presión regulatoria sin precedentes, sobre tres fallas estructurales:\n\nLa “caja negra” del reciclaje. Las toneladas se reportan agregadas al final de la cadena; la eficiencia de puntos limpios y micro-rutas específicas es invisible.\nEl desfase analógico. Minutas de papel y planillas Excel generan hasta 90 días de retraso en la consolidación de informes.\nVulnerabilidad del dato. Los registros manuales carecen de garantías de no adulteración ante auditorías del MMA o la SMA.\n\nSiguiendo a Kitchin (2014) y Townsend (2013), una ciudad inteligente no se define por sensores de alto costo, sino por su capacidad de integrar flujos de información distribuidos. Y siguiendo a Simondon, PET CLOUD no reemplaza el conocimiento empírico del reciclador por un algoritmo ciego: amplifica su rol socioterritorial traduciendo su trabajo diario en datos certificados que la burocracia estatal reconoce."
+  },
+  {
+    "objectID": "proyecto.html#diagnóstico",
+    "href": "proyecto.html#diagnóstico",
+    "title": "El proyecto",
+    "section": "",
+    "text": "La entrada en vigencia de las metas de recolección de la Ley 20.920 impone a municipios y Sistemas de Gestión una presión regulatoria sin precedentes, sobre tres fallas estructurales:\n\nLa “caja negra” del reciclaje. Las toneladas se reportan agregadas al final de la cadena; la eficiencia de puntos limpios y micro-rutas específicas es invisible.\nEl desfase analógico. Minutas de papel y planillas Excel generan hasta 90 días de retraso en la consolidación de informes.\nVulnerabilidad del dato. Los registros manuales carecen de garantías de no adulteración ante auditorías del MMA o la SMA.\n\nSiguiendo a Kitchin (2014) y Townsend (2013), una ciudad inteligente no se define por sensores de alto costo, sino por su capacidad de integrar flujos de información distribuidos. Y siguiendo a Simondon, PET CLOUD no reemplaza el conocimiento empírico del reciclador por un algoritmo ciego: amplifica su rol socioterritorial traduciendo su trabajo diario en datos certificados que la burocracia estatal reconoce."
+  },
+  {
+    "objectID": "proyecto.html#objetivo-general",
+    "href": "proyecto.html#objetivo-general",
+    "title": "El proyecto",
+    "section": "Objetivo general",
+    "text": "Objetivo general\nFortalecer la gobernanza, fiscalización y eficiencia de los sistemas de reciclaje municipal en Chile mediante un dispositivo tecnológico descentralizado, transparente y basado en el trabajo formalizado de cooperativas de recicladores de base."
+  },
+  {
+    "objectID": "proyecto.html#objetivos-específicos-y-resultados-esperados",
+    "href": "proyecto.html#objetivos-específicos-y-resultados-esperados",
+    "title": "El proyecto",
+    "section": "Objetivos específicos y resultados esperados",
+    "text": "Objetivos específicos y resultados esperados\n\n\n\n\n\n\n\n\nObjetivo\nProducto\nIndicador de éxito\n\n\n\n\nOE1 Arquitectura de datos\nEsquema NoSQL + firestore.rules que bloquean update y delete en pesajes\n100% de intentos de alteración bloqueados en backend\n\n\nOE2 Interfaces MVP\nPWA de pesaje + Dashboard con Maps API y Firebase Auth\nCarga inicial &lt; 3 s en gama baja\n\n\nOE3 Resiliencia de datos\nSincronización asíncrona offline testeada\nCero pérdida de registros al recuperar señal\n\n\nOE4 Pilotaje en terreno\nProtocolo de piloto de 8 semanas\n≥ 1 carta de intención (municipio o cooperativa)\n\n\nOE5 Automatización\nActas REP y Certificados PDF automáticos\nReporte mensual con folios en &lt; 5 s"
+  },
+  {
+    "objectID": "proyecto.html#medición-de-impacto",
+    "href": "proyecto.html#medición-de-impacto",
+    "title": "El proyecto",
+    "section": "Medición de impacto",
+    "text": "Medición de impacto\nTasa de Eficiencia de Recolección Territorial (TERT). Porcentaje de puntos que transitan de Pendiente a Recolectado sobre el total catastrado en el periodo:\n\\[TERT = \\frac{P_{recolectados}}{P_{totales}} \\times 100\\]\nMitigación de emisiones equivalentes. CO₂e evitado al desviar PET de vertederos hacia valorización, usando la masa exacta e inmutable registrada en plataforma:\n\\[CO_2e_{evitado} = M_{PET} \\times F_{emisión}\\]\ndonde \\(M_{PET}\\) es el acumulado neto verificable de kilogramos recuperados y \\(F_{emisión}\\) el factor de ciclo de vida evitado por kg reciclado versus resina virgen."
+  },
+  {
+    "objectID": "proyecto.html#cronograma",
+    "href": "proyecto.html#cronograma",
+    "title": "El proyecto",
+    "section": "Cronograma",
+    "text": "Cronograma\nFase 1 (meses 1–2): Cierre técnico del MVP — reglas de inmutabilidad, pruebas offline, validación académica.\nFase 2 (meses 3–4): Red de alianzas — presentaciones a DIMAO y Secpla, talleres de codiseño con cooperativas, postulación a fondos.\nFase 3 (meses 5–6): Piloto y reportabilidad — despliegue de 8 semanas, auditoría de inmutabilidad, primeras Actas REP, informe de resiliencia de datos."
+  },
+  {
+    "objectID": "proyecto.html#referencias",
+    "href": "proyecto.html#referencias",
+    "title": "El proyecto",
+    "section": "Referencias",
+    "text": "Referencias\n\nKitchin, R. (2014). The Real-Time City? Big Data and Urbanism. GeoJournal, 79(1), 1–14.\nMinisterio del Medio Ambiente de Chile (2016). Ley 20.920 (Ley REP).\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nTownsend, A. M. (2013). Smart Cities: Big Data, Civic Hackers, and the Quest for a New Utopia. Norton."
+  },
+  {
+    "objectID": "colaboracion.html",
+    "href": "colaboracion.html",
+    "title": "Colaboración",
+    "section": "",
+    "text": "El proyecto está en fase inicial de MVP y busca activamente:"
+  },
+  {
+    "objectID": "colaboracion.html#equipo",
+    "href": "colaboracion.html#equipo",
+    "title": "Colaboración",
+    "section": "Equipo",
+    "text": "Equipo\n\nEmilio Bustos Azúa — Sociólogo, Universidad de Playa Ancha.\n\n\nÁngel Muñoz — Licenciado en Sociología, Universidad Alberto Hurtado."
+  },
+  {
+    "objectID": "colaboracion.html#contacto",
+    "href": "colaboracion.html#contacto",
+    "title": "Colaboración",
+    "section": "Contacto",
+    "text": "Contacto\n✉ anmunozr@alumnos.uahurtado.cl"
+  },
+  {
+    "objectID": "arquitectura.html",
+    "href": "arquitectura.html",
+    "title": "Arquitectura",
+    "section": "",
+    "text": "flowchart LR\n  A[Recicladora en ruta&lt;br/&gt;PWA · offline-first] --&gt;|pesaje + GPS| B[(Firestore&lt;br/&gt;reglas: no update / no delete)]\n  B --&gt; C[Dashboard DIMAO&lt;br/&gt;metas Ley REP en tiempo real]\n  B --&gt; D[Generador de Actas REP&lt;br/&gt;PDF con folio]\n  D --&gt; E[SINADER&lt;br/&gt;interoperabilidad proyectada]"
+  },
+  {
+    "objectID": "arquitectura.html#visión-general",
+    "href": "arquitectura.html#visión-general",
+    "title": "Arquitectura",
+    "section": "",
+    "text": "flowchart LR\n  A[Recicladora en ruta&lt;br/&gt;PWA · offline-first] --&gt;|pesaje + GPS| B[(Firestore&lt;br/&gt;reglas: no update / no delete)]\n  B --&gt; C[Dashboard DIMAO&lt;br/&gt;metas Ley REP en tiempo real]\n  B --&gt; D[Generador de Actas REP&lt;br/&gt;PDF con folio]\n  D --&gt; E[SINADER&lt;br/&gt;interoperabilidad proyectada]"
+  },
+  {
+    "objectID": "arquitectura.html#componentes",
+    "href": "arquitectura.html#componentes",
+    "title": "Arquitectura",
+    "section": "Componentes",
+    "text": "Componentes\n\nPWA de registro (frontend operario). Usabilidad simplificada para pesaje en ruta: peso, material, foto opcional, geolocalización automática. Persistencia local (IndexedDB) con sincronización asíncrona al recuperar señal.\n\n\nMotor de datos (Firebase / Firestore). NoSQL asíncrono en la nube. La inmutabilidad no es una promesa de interfaz: es una regla de servidor (allow update, delete: if false) sobre la colección de pesajes.\n\n\nDashboard de gobernanza (frontend municipal). Visualización del cumplimiento de metas REP, mapa de puntos con estados Recolectado / Pendiente, y exportación de reportes."
+  },
+  {
+    "objectID": "arquitectura.html#estado-de-implementación",
+    "href": "arquitectura.html#estado-de-implementación",
+    "title": "Arquitectura",
+    "section": "Estado de implementación",
+    "text": "Estado de implementación\nLa inmutabilidad de los pesajes ya está implementada como regla de servidor, junto con autenticación, validación de datos en frontera (rangos de peso, identidad del registrador) y auditoría de origen por usuario."
+  },
+  {
+    "objectID": "arquitectura.html#ruta-de-consolidación",
+    "href": "arquitectura.html#ruta-de-consolidación",
+    "title": "Arquitectura",
+    "section": "Ruta de consolidación",
+    "text": "Ruta de consolidación\n\nSprint 0: endurecimiento de seguridad — restricción de credenciales y corrección del modelo de roles.\nSprint 1: roles diferenciados (operario / cooperativa / municipio / vecino) mediante custom claims asignados desde el servidor.\nSprint 2: persistencia offline con sincronización asíncrona, y pruebas en zonas de sombra de cobertura (OE3).\nSprint 3: alertas vecinales, certificados y generación automática de Actas REP en PDF (OE5)."
+  },
+  {
+    "objectID": "arquitectura.html#decisiones-abiertas",
+    "href": "arquitectura.html#decisiones-abiertas",
+    "title": "Arquitectura",
+    "section": "Decisiones abiertas",
+    "text": "Decisiones abiertas\n\nEstrategia de folios y firma de las Actas REP en PDF.\nCostos de Firestore a escala municipal y plan de salida (lock-in).\n\nEsta página se irá actualizando a medida que el diseño técnico se consolide."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
+    "section": "",
+    "text": "GovTech · Ley REP · Economía circular\n\n\n\nPET CLOUD digitaliza la cadena de valor del reciclaje urbano: las cooperativas de recicladores de base registran sus pesajes georreferenciados en ruta, y los municipios monitorean el cumplimiento de la Ley 20.920 en tiempo real, con datos que nadie puede adulterar.\n\nSúmate al piloto Cómo funciona\n\nDe 90 días de desfase en informes → tiempo real\nEl problema"
+  },
+  {
+    "objectID": "index.html#la-caja-negra-del-reciclaje-local",
+    "href": "index.html#la-caja-negra-del-reciclaje-local",
+    "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
+    "section": "La caja negra del reciclaje local",
+    "text": "La caja negra del reciclaje local\nLa fiscalización de la Ley REP llegó, pero la infraestructura de información del reciclaje municipal sigue siendo analógica. Tres fallas estructurales lo impiden todo:\n\n\nDatos agregados e invisibles\nLas toneladas se consolidan al final de la cadena. La eficiencia de cada punto limpio o micro-ruta vecinal es invisible para quien toma decisiones.\n\n\nDesfase analógico de 90 días\nMinutas de papel y planillas Excel propensas a pérdida y manipulación retrasan hasta tres meses la consolidación de informes municipales.\n\n\nDatos vulnerables ante auditorías\nSin garantías de no adulteración, los municipios enfrentan a la SMA y al MMA con registros que no resisten una auditoría técnica.\n\n\nLa solución"
+  },
+  {
+    "objectID": "index.html#una-cadena-de-custodia-digital-del-territorio-al-ministerio",
+    "href": "index.html#una-cadena-de-custodia-digital-del-territorio-al-ministerio",
+    "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
+    "section": "Una cadena de custodia digital, del territorio al ministerio",
+    "text": "Una cadena de custodia digital, del territorio al ministerio\n\n\nPesaje en ruta PWA offline-first\nLa recicladora de base registra peso, material y ubicación GPS desde su propio celular. Sin señal, el dato se guarda localmente y se sincroniza solo al volver la cobertura. Cero pérdida.\n\n\nDato inmutable Reglas de servidor\nUna vez subido, el pesaje no puede modificarse ni eliminarse. La inmutabilidad no es una promesa de interfaz: está codificada en el backend.\n\n\nGobernanza en tiempo real Dashboard DIMAO\nLas Direcciones de Medio Ambiente ven el avance hacia sus metas REP al instante, con cada punto del territorio en estado Recolectado o Pendiente.\n\n\nReportabilidad certificada Actas REP · PDF\nActas y Certificados de Disposición Final se generan automáticamente con folio, listos para auditorías y proyectando interoperabilidad con SINADER.\n\n\n\n🔒 Inspiración de fondo: siguiendo a Simondon, la tecnología no reemplaza el conocimiento empírico del reciclador — lo amplifica, traduciendo su trabajo diario en datos certificados que el Estado reconoce.\n\nMedición de impacto"
+  },
+  {
+    "objectID": "index.html#indicadores-duros-no-relatos",
+    "href": "index.html#indicadores-duros-no-relatos",
+    "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
+    "section": "Indicadores duros, no relatos",
+    "text": "Indicadores duros, no relatos\n\n\nTERT\n\nTasa de Eficiencia de Recolección Territorial\nPorcentaje de puntos que pasan de Pendiente a Recolectado sobre el total catastrado en el periodo.\n\nTERT = (P recolectados / P totales) × 100\n\n\n\n\nCO₂e\n\nMitigación de emisiones equivalentes\nDióxido de carbono evitado al desviar PET de vertederos hacia valorización, sobre masa exacta e inmutable.\n\nCO₂e = M PET × F emisión\n\n\n\n\nTerreno y equipo"
+  },
+  {
+    "objectID": "index.html#quiénes-estamos-detrás",
+    "href": "index.html#quiénes-estamos-detrás",
+    "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
+    "section": "Quiénes estamos detrás",
+    "text": "Quiénes estamos detrás\n\n\nEB Emilio Bustos Azúa\nSociólogo · Universidad de Playa Ancha\n\n\n\n\nAM Ángel Muñoz\nLicenciado en Sociología · Universidad Alberto Hurtado"
+  },
+  {
+    "objectID": "index.html#tu-comuna-quiere-datos-de-reciclaje-que-resistan-cualquier-auditoría",
+    "href": "index.html#tu-comuna-quiere-datos-de-reciclaje-que-resistan-cualquier-auditoría",
+    "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
+    "section": "¿Tu comuna quiere datos de reciclaje que resistan cualquier auditoría?",
+    "text": "¿Tu comuna quiere datos de reciclaje que resistan cualquier auditoría?\nConversemos. El piloto está diseñado para partir en la Región de Valparaíso, pero el modelo escala a cualquier gobierno local de Chile.\nEscríbenos"
+  }
+]
