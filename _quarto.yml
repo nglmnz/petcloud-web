@@ -5,8 +5,8 @@ project:
 website:
   title: "PET CLOUD"
   description: "Trazabilidad inmutable y economía circular para Smart Cities"
-  site-url: https://nglmnz.github.io/petcloud
-  repo-url: https://github.com/nglmnz/petcloud
+  site-url: https://TU-USUARIO.github.io/petcloud
+  repo-url: https://github.com/TU-USUARIO/petcloud
   navbar:
     background: "#0E3B43"
     foreground: "#F5FBFA"
@@ -17,11 +17,13 @@ website:
         text: El proyecto
       - href: arquitectura.qmd
         text: Arquitectura
+      - href: vina.qmd
+        text: "Caso Viña del Mar"
       - href: colaboracion.qmd
         text: Colaboración
     right:
       - icon: github
-        href: https://github.com/nglmnz/petcloud
+        href: https://github.com/TU-USUARIO/petcloud
   page-footer:
     left: "PET CLOUD · 2026 · Propuesta en fase MVP"
     right: "Hecho con Quarto + GitHub Pages"
