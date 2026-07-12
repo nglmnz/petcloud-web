@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Caso piloto: Viña del Mar – PET CLOUD</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PET CLOUD</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proyecto.html"> 
+<span class="menu-text">El proyecto</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./arquitectura.html"> 
+<span class="menu-text">Arquitectura</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./colaboracion.html"> 
+<span class="menu-text">Colaboración</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nglmnz/petcloud"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#viña-del-mar-en-números" id="toc-viña-del-mar-en-números" class="nav-link active" data-scroll-target="#viña-del-mar-en-números">Viña del Mar en números</a></li>
+  <li><a href="#mapa-del-territorio" id="toc-mapa-del-territorio" class="nav-link" data-scroll-target="#mapa-del-territorio">Mapa del territorio</a></li>
+  <li><a href="#lo-que-la-investigación-de-emilio-reveló" id="toc-lo-que-la-investigación-de-emilio-reveló" class="nav-link" data-scroll-target="#lo-que-la-investigación-de-emilio-reveló">Lo que la investigación de Emilio reveló</a></li>
+  <li><a href="#del-hallazgo-al-diseño" id="toc-del-hallazgo-al-diseño" class="nav-link" data-scroll-target="#del-hallazgo-al-diseño">Del hallazgo al diseño</a></li>
+  <li><a href="#referencias-del-territorio" id="toc-referencias-del-territorio" class="nav-link" data-scroll-target="#referencias-del-territorio">Referencias del territorio</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Caso piloto: Viña del Mar</h1>
+<p class="subtitle lead">Territorio, cooperativas y brecha de género en la cadena del reciclaje</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  #mapa-vina{ height:420px; border-radius:14px; border:1px solid rgba(14,59,67,.15); margin:1rem 0 0.5rem; }
+  .leyenda-mapa{ display:flex; gap:14px; flex-wrap:wrap; font-size:.78rem; margin-bottom:1.4rem; }
+  .leyenda-mapa span{ display:flex; align-items:center; gap:6px; }
+  .dot-ley{ width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+  .leaflet-popup-content b{ color:#0E3B43; }
+  .leaflet-popup-content .pill{
+    display:inline-block; font-size:.65rem; font-weight:700; padding:2px 8px;
+    border-radius:999px; margin-top:4px;
+  }
+  .pill-op{ background:rgba(46,125,50,.13); color:#2E7D32; }
+  .pill-no{ background:rgba(224,122,47,.15); color:#E07A2F; }
+  .pill-coop{ background:rgba(14,59,67,.1); color:#0E3B43; }
+  .stat-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:1.4rem 0 2rem; }
+  .stat{ background:var(--petroleo,#0E3B43); color:#F5FBFA; border-radius:12px; padding:16px; }
+  .stat .n{ font-size:1.6rem; font-weight:800; color:#6FCFC3; font-variant-numeric:tabular-nums; }
+  .stat .l{ font-size:.75rem; opacity:.8; margin-top:2px; }
+  .stat .f{ font-size:.65rem; opacity:.5; margin-top:6px; }
+  .barrera{ border-left:4px solid #E07A2F; background:#fff; border-radius:10px; padding:12px 16px; margin-bottom:10px; border:1px solid rgba(14,59,67,.1); border-left-width:4px; }
+  .barrera h4{ font-size:.9rem; color:#0E3B43; margin:0 0 4px; }
+  .barrera p{ font-size:.82rem; opacity:.8; margin:0; }
+  .cita{ background:rgba(14,59,67,.05); border-radius:10px; padding:12px 16px; font-size:.82rem; font-style:italic; margin:1rem 0; border-left:3px solid #6FCFC3; }
+  .cita cite{ font-style:normal; font-size:.72rem; opacity:.6; display:block; margin-top:4px; }
+</style>
+<p><span class="sec-label">Territorio piloto</span></p>
+<section id="viña-del-mar-en-números" class="level2">
+<h2 class="anchored" data-anchor-id="viña-del-mar-en-números">Viña del Mar en números</h2>
+<p>La tesis de Emilio Bustos Azúa (UPLA, 2024) sobre recicladoras de base en Valparaíso y Viña del Mar es la base empírica que ancla el piloto de PET CLOUD a este territorio. Los datos oficiales y el trabajo de campo revelan una realidad que PET CLOUD puede transformar con datos.</p>
+<div class="stat-grid">
+  <div class="stat">
+    <div class="n">23%</div>
+    <div class="l">tasa de reciclaje comunal en 2024</div>
+    <div class="f">Meta: 50% gradual · Municipalidad de Viña del Mar, 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">+130</div>
+    <div class="l">recicladores de base participaron en certificaciones REP</div>
+    <div class="f">Ministerio del Medio Ambiente, 2023</div>
+  </div>
+  <div class="stat">
+    <div class="n">60%</div>
+    <div class="l">de los recicladores de base son mujeres</div>
+    <div class="f">ANARCH · Gonzalez, 2020</div>
+  </div>
+  <div class="stat">
+    <div class="n">4</div>
+    <div class="l">cooperativas activas en Viña del Mar en 2026</div>
+    <div class="f">Hace 5 años solo había 1 · País Circular, 2026</div>
+  </div>
+</div>
+</section>
+<section id="mapa-del-territorio" class="level2">
+<h2 class="anchored" data-anchor-id="mapa-del-territorio">Mapa del territorio</h2>
+<p>Puntos limpios, cooperativas y actores clave en la cadena del reciclaje de Viña del Mar.&nbsp;Esta es la infraestructura que PET CLOUD conectaría con datos trazables.</p>
+<div id="mapa-vina"></div>
+<div class="leyenda-mapa">
+  <span><span class="dot-ley" style="background:#2E7D32"></span>Punto limpio operativo</span>
+  <span><span class="dot-ley" style="background:#E07A2F"></span>Punto limpio no operativo</span>
+  <span><span class="dot-ley" style="background:#0E3B43"></span>Cooperativa / actor clave</span>
+  <span><span class="dot-ley" style="background:#6FCFC3"></span>Institución municipal</span>
+</div>
+<script>
+(function(){
+  var map = L.map('mapa-vina').setView([-33.024, -71.558], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'© <a href="https://openstreetmap.org">OpenStreetMap</a>',maxZoom:18
+  }).addTo(map);
+
+  function mk(color){ return L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)"></div>',iconAnchor:[7,7]}); }
+
+  var puntos = [
+    // Puntos limpios operativos
+    { ll:[-33.000,-71.497], color:'#2E7D32', nombre:'Punto Limpio Reñaca Alto (COGESTA)',
+      desc:'<b>Punto Limpio Reñaca Alto</b><br>Camino Reñaca Alto, costado Complejo Everton<br>Mar–Vie 10–17h · Sáb 10–13h<br>PET, HDPE, PP, cartón, papel<br><span class="pill pill-op">Operativo</span><br><span class="pill pill-coop">Gestionado por COGESTA</span>' },
+    { ll:[-33.034,-71.551], color:'#2E7D32', nombre:'Punto Limpio Quinta Vergara',
+      desc:'<b>Punto Limpio Quinta Vergara (Potrerillos)</b><br>Parque Quinta Vergara, sector Potrerillos<br>Lun–Sáb 10–16h<br>Vidrio, tetrapack, latas, papel, cartón, plásticos<br><span class="pill pill-op">Operativo</span>' },
+    { ll:[-33.020,-71.546], color:'#2E7D32', nombre:'Punto Verde Open Plaza Santa Julia',
+      desc:'<b>Punto Verde Triciclos · Open Plaza Santa Julia</b><br>Separar botellas por color · PET 1, HDPE 2, PP 4 y 5<br><span class="pill pill-op">Operativo</span>' },
+    // Punto no operativo
+    { ll:[-33.032,-71.548], color:'#E07A2F', nombre:'Punto Limpio Quinta Vergara (anterior)',
+      desc:'<b>Punto Limpio Parque Quinta Vergara</b><br>Parque Potrerillos<br>Lun–Vie 9:30–17h · Sáb 9:30–13:30h<br><span class="pill pill-no">No operativo por el momento</span>' },
+    // Cooperativas y actores
+    { ll:[-33.002,-71.499], color:'#0E3B43', nombre:'COGESTA',
+      desc:'<b>COGESTA</b><br>Cooperativa de Gestión Ambiental<br>5 mujeres fundadoras · Reñaca Alto<br>Reciclaje + educación ambiental · Ley REP<br><a href="https://cogesta.cl" target="_blank">cogesta.cl</a><br><span class="pill pill-coop">Cooperativa de mujeres</span>' },
+    { ll:[-33.026,-71.545], color:'#0E3B43', nombre:'Cooperativa de Trabajo de Recicladores de Viña del Mar',
+      desc:'<b>Cooperativa de Trabajo de Recicladores de Viña del Mar</b><br>Gestionó el reciclaje del Festival de Viña 2026<br>Alianza con ReSimple<br><span class="pill pill-coop">Cooperativa</span>' },
+    { ll:[-33.029,-71.541], color:'#0E3B43', nombre:'Cooperativa de Recicladores con Base de Viña del Mar',
+      desc:'<b>Cooperativa de Recicladores con Base de Viña del Mar</b><br>Reconocida en el Día del Reciclador de Base 2026<br><span class="pill pill-coop">Cooperativa</span>' },
+    // Instituciones
+    { ll:[-33.040,-71.549], color:'#6FCFC3', nombre:'Depto. Servicios del Ambiente (DIMAO)',
+      desc:'<b>Departamento de Servicios del Ambiente</b><br>5 Oriente Nº890, Viña del Mar<br>Recibe cartones, tetrapack y plásticos<br>Programa "Viña Recicla"<br><span class="pill pill-coop">DIMAO · contraparte municipal</span>' },
+  ];
+
+  puntos.forEach(function(p){
+    L.marker(p.ll, {icon: mk(p.color)})
+      .addTo(map)
+      .bindPopup('<div style="font-size:.82rem;max-width:220px;line-height:1.45">'+p.desc+'</div>');
+  });
+})();
+</script>
+<p><span class="sec-label">Hallazgos del territorio</span></p>
+</section>
+<section id="lo-que-la-investigación-de-emilio-reveló" class="level2">
+<h2 class="anchored" data-anchor-id="lo-que-la-investigación-de-emilio-reveló">Lo que la investigación de Emilio reveló</h2>
+<p>La tesis <em>“Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920”</em> (Bustos Azúa, 2024) entrevistó a cinco recicladoras de base — Camila, Myriam, Maritza, Rosa y Javiera — y documentó con precisión las tres fallas estructurales que PET CLOUD intenta resolver desde la tecnología.</p>
+<section id="sin-espacio-de-acopio-ni-infraestructura" class="level4 barrera">
+<h4 class="anchored" data-anchor-id="sin-espacio-de-acopio-ni-infraestructura">Sin espacio de acopio ni infraestructura</h4>
+<p>La totalidad de las entrevistadas señaló operar desde sus hogares o espacios improvisados, en conflicto permanente con vecinos y sin condiciones sanitarias básicas.</p>
+</section>
+<div class="cita">
+<p>“Lo que más se necesita es un lugar de acopio. No poder reciclar cerca de la casa dificulta mucho porque sanidad es lo primero que debemos tener.” <cite>— Maritza, recicladora de base, Valparaíso · en Bustos Azúa (2024)</cite></p>
+</div>
+<section id="la-ley-rep-exige-lo-que-no-existe" class="level4 barrera">
+<h4 class="anchored" data-anchor-id="la-ley-rep-exige-lo-que-no-existe">La Ley REP exige lo que no existe</h4>
+<p>Los requisitos de certificación y registro de la Ley 20.920 suponen recursos, tiempo e infraestructura que las recicladoras no tienen — especialmente las mujeres con doble carga de trabajo.</p>
+</section>
+<div class="cita">
+<p>“La ley suena linda, pero no tenemos acceso a nada. Nos piden certificaciones, nos piden cumplir con cosas que no podemos, porque no hay infraestructura ni recursos para nosotras.” <cite>— Maritza · en Bustos Azúa (2024)</cite></p>
+</div>
+<section id="el-dato-de-pesaje-no-existe-como-tal" class="level4 barrera">
+<h4 class="anchored" data-anchor-id="el-dato-de-pesaje-no-existe-como-tal">El dato de pesaje no existe como tal</h4>
+<p>Los pesajes son informales, no trazables y no acumulables. Sin un registro verificable, el trabajo de las cooperativas es invisible para el municipio, la DIMAO y el Ministerio del Medio Ambiente.</p>
+</section>
+<div class="cita">
+<p>“Nos exigen cosas que parecen para empresas grandes. ¿Cómo vamos a certificar algo si ni siquiera tenemos un baño?” <cite>— Myriam, presidenta de asociación de recicladores · en Bustos Azúa (2024)</cite></p>
+</div>
+<p><span class="sec-label">Cómo PET CLOUD responde</span></p>
+</section>
+<section id="del-hallazgo-al-diseño" class="level2">
+<h2 class="anchored" data-anchor-id="del-hallazgo-al-diseño">Del hallazgo al diseño</h2>
+<p>La tesis de Emilio no es solo un antecedente — es el diseño funcional del sistema. Cada barrera documentada tiene una respuesta directa en la arquitectura de PET CLOUD:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Barrera documentada</th>
+<th>Respuesta de PET CLOUD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sin registro verificable de pesajes</td>
+<td>PWA de registro offline-first + dato inmutable en Firestore</td>
+</tr>
+<tr class="even">
+<td>Formalización imposible sin evidencia</td>
+<td>Actas REP en PDF con folio, generadas automáticamente</td>
+</tr>
+<tr class="odd">
+<td>DIMAO sin datos en tiempo real</td>
+<td>Dashboard de metas REP con estados por punto del territorio</td>
+</tr>
+<tr class="even">
+<td>Trabajo invisible para el Estado</td>
+<td>Trazabilidad georreferenciada que convierte el kilo físico en dato certificado</td>
+</tr>
+</tbody>
+</table>
+<p>El piloto de 8 semanas propuesto para la Región de Valparaíso parte con las cooperativas que ya operan en este mapa — COGESTA en Reñaca Alto es el punto de entrada más natural, por su perfil (mujeres, Ley REP, educación ambiental) y su disposición documentada a la formalización.</p>
+</section>
+<section id="referencias-del-territorio" class="level2">
+<h2 class="anchored" data-anchor-id="referencias-del-territorio">Referencias del territorio</h2>
+<ul>
+<li>Bustos Azúa, J. E. (2024). <em>Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920</em>. Universidad de Playa Ancha.</li>
+<li>Ministerio del Medio Ambiente (2023). Municipio de Viña del Mar y Seremi inician proyecto en apoyo a recicladores de base.</li>
+<li>País Circular (2026). Recicladores de base organizados: en cinco años cooperativas dan salto de 6 a 47.</li>
+<li>Municipalidad de Viña del Mar (2025). Viña del Mar alcanzó un 23% de reciclaje en 2024.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nglmnz\.github\.io\/petcloud");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>PET CLOUD · 2026 · Propuesta en fase MVP</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Hecho con Quarto + GitHub Pages</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
