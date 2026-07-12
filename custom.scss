@@ -1,0 +1,145 @@
+/*-- scss:defaults --*/
+
+// Paleta derivada del propio sistema:
+// aguamarina del PET translúcido + estados Naranja/Verde del dashboard
+$petroleo:   #0E3B43;
+$petroleo-2: #14545E;
+$petroleo-3: #1E6E72;
+$aqua-pet:   #6FCFC3;
+$aqua-dark:  #2E8B80;
+$verde-ok:   #2E7D32;
+$naranja-p:  #E07A2F;
+$hueso:      #F5FBFA;
+$tinta:      #16262A;
+
+$body-bg: $hueso;
+$body-color: $tinta;
+$link-color: $aqua-dark;
+$headings-color: $petroleo;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
+$headings-font-weight: 800;
+
+/*-- scss:rules --*/
+
+// ---------- Etiquetas de sección ----------
+.sec-label {
+  font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: $aqua-dark; margin-bottom: 4px;
+}
+
+// ---------- Hero ----------
+.hero-pet {
+  background: linear-gradient(165deg, $petroleo 0%, $petroleo-2 55%, $petroleo-3 100%);
+  color: $hueso; border-radius: 16px; padding: 3rem 2rem;
+  margin-bottom: 2.4rem; position: relative; overflow: hidden;
+}
+.hero-pet::after {
+  content: ""; position: absolute; right: -80px; top: -60px;
+  width: 320px; height: 320px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(111,207,195,.18), transparent 70%);
+}
+.hero-pet h1 {
+  color: $hueso; margin-top: .6rem; border: none;
+  font-size: clamp(1.8rem, 5vw, 2.7rem); line-height: 1.15; max-width: 22ch;
+}
+.hero-pet h1 em { font-style: normal; color: $aqua-pet; }
+.hero-pet .eyebrow {
+  display: inline-block; font-size: .7rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: $aqua-pet;
+  border: 1px solid rgba(111,207,195,.4); padding: 4px 12px; border-radius: 999px;
+}
+.hero-pet .lead { color: rgba(245,251,250,.82); max-width: 52ch; font-size: 1rem; }
+.hero-pet .dato { margin-top: 1.6rem; font-size: .85rem; color: rgba(245,251,250,.65); }
+.hero-pet .dato b { color: $aqua-pet; font-size: 1.05rem; }
+.hero-pet .btn { margin-right: .6rem; margin-top: 1rem; font-weight: 700; border-radius: 10px; padding: .7rem 1.4rem; }
+.btn-aqua { background: $aqua-pet; color: $petroleo; border: none; }
+.btn-aqua:hover { background: darken($aqua-pet, 8%); color: $petroleo; }
+.btn-borde { border: 1.5px solid rgba(245,251,250,.4); color: $hueso; background: transparent; }
+.btn-borde:hover { border-color: $aqua-pet; color: $aqua-pet; }
+
+// ---------- Tarjetas de fallas (problema) ----------
+.fallas { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 1.4rem 0 2rem; }
+.falla {
+  background: #fff; border: 1px solid rgba(14,59,67,.1); border-radius: 14px;
+  padding: 18px; border-top: 4px solid $naranja-p;
+}
+.falla h3 { font-size: .95rem; color: $petroleo; margin-top: 0; }
+.falla p { font-size: .85rem; opacity: .8; margin-bottom: 0; }
+
+// ---------- Cadena de custodia (firma visual) ----------
+.cadena { position: relative; padding-left: 26px; margin: 1.6rem 0 2rem; }
+.cadena::before {
+  content: ""; position: absolute; left: 8px; top: 14px; bottom: 14px; width: 2px;
+  background: linear-gradient($aqua-pet, $verde-ok);
+}
+.paso { position: relative; padding-bottom: 26px; }
+.paso:last-child { padding-bottom: 0; }
+.paso::before {
+  content: ""; position: absolute; left: -24px; top: 6px; width: 14px; height: 14px;
+  border-radius: 50%; background: $aqua-pet; box-shadow: 0 0 0 4px rgba(111,207,195,.25);
+}
+.paso:last-child::before { background: $verde-ok; box-shadow: 0 0 0 4px rgba(46,125,50,.18); }
+.paso h3 { font-size: 1rem; color: $petroleo; margin: 0; }
+.paso p { font-size: .87rem; opacity: .8; max-width: 58ch; margin: .3rem 0 0; }
+.tag {
+  font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  background: rgba(111,207,195,.18); color: $aqua-dark;
+  padding: 3px 8px; border-radius: 999px; margin-left: 8px; vertical-align: middle;
+}
+
+// ---------- Métricas de impacto ----------
+.metricas { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin: 1.4rem 0 2rem; }
+.metrica { background: $petroleo; color: $hueso; border-radius: 14px; padding: 20px; }
+.metrica .sigla { font-size: 1.5rem; font-weight: 800; color: $aqua-pet; }
+.metrica h3 { font-size: .95rem; color: $hueso; margin: .3rem 0 .4rem; }
+.metrica p { font-size: .83rem; color: rgba(245,251,250,.75); margin-bottom: .6rem; }
+.metrica .formula {
+  font-family: ui-monospace, monospace; font-size: .8rem;
+  background: rgba(255,255,255,.08); border-radius: 8px; padding: 8px 12px; color: $aqua-pet;
+}
+
+// ---------- Bloques / alianzas / equipo ----------
+.bloque {
+  border: 1px solid rgba(14,59,67,.12); border-left: 4px solid $aqua-pet;
+  border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: 1rem; background: white;
+}
+.persona { display: flex; gap: 14px; align-items: center; }
+.avatar {
+  width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(160deg, $petroleo, $petroleo-3); color: $aqua-pet;
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .95rem;
+}
+.persona h3 { font-size: .95rem; margin: 0; }
+.persona p { font-size: .8rem; opacity: .7; margin: 0; }
+
+// ---------- Estados y píldoras ----------
+.estado-ok, .estado-pendiente, .pill-mvp {
+  display: inline-block; padding: .12rem .65rem; border-radius: 999px;
+  font-size: .8em; font-weight: 700;
+}
+.estado-ok { background: rgba(46,125,50,.12); color: $verde-ok; }
+.estado-pendiente { background: rgba(224,122,47,.14); color: $naranja-p; }
+.pill-mvp { background: rgba(224,122,47,.13); color: $naranja-p; font-size: .72rem; }
+
+// ---------- CTA final ----------
+.cta-final {
+  background: linear-gradient(165deg, $petroleo-2, $petroleo); color: $hueso;
+  border-radius: 16px; padding: 2.4rem 2rem; text-align: center; margin: 2.4rem 0 1rem;
+}
+.cta-final h2 { color: $hueso; border: none; margin-top: 0; }
+.cta-final p { max-width: 50ch; margin: 0 auto 1.4rem; color: rgba(245,251,250,.8); }
+
+// ---------- Ajustes generales ----------
+h2 { margin-top: 2.4rem; }
+.lock-note {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: rgba(14,59,67,.05); border-radius: 12px; padding: 14px 16px;
+  font-size: .85rem; max-width: 660px; margin-top: 1.2rem;
+}
+table { font-size: .95em; }
+thead { background: rgba(111,207,195,.15); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+// El texto de .persona llega como párrafo junto al avatar
+.persona p { display: block; }
+.persona > p { display: flex; gap: 14px; align-items: center; margin: 0; }

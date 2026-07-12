@@ -1,0 +1,124 @@
+---
+title: ""
+toc: false
+---
+
+::: {.hero-pet}
+[GovTech · Ley REP · Economía circular]{.eyebrow}
+
+# El reciclaje municipal, [trazable e inmutable]{style="color:#6FCFC3"} desde el pesaje en origen
+
+::: {.lead}
+PET CLOUD digitaliza la cadena de valor del reciclaje urbano: las cooperativas de recicladores de base registran sus pesajes georreferenciados en ruta, y los municipios monitorean el cumplimiento de la Ley 20.920 en tiempo real, con datos que nadie puede adulterar.
+:::
+
+[Súmate al piloto](colaboracion.qmd){.btn .btn-aqua}
+[Cómo funciona](#la-solución){.btn .btn-borde}
+
+::: {.dato}
+De **90 días** de desfase en informes → **tiempo real**
+:::
+:::
+
+[El problema]{.sec-label}
+
+## La caja negra del reciclaje local
+
+La fiscalización de la Ley REP llegó, pero la infraestructura de información del reciclaje municipal sigue siendo analógica. Tres fallas estructurales lo impiden todo:
+
+::: {.fallas}
+::: {.falla}
+### Datos agregados e invisibles
+Las toneladas se consolidan al final de la cadena. La eficiencia de cada punto limpio o micro-ruta vecinal es invisible para quien toma decisiones.
+:::
+::: {.falla}
+### Desfase analógico de 90 días
+Minutas de papel y planillas Excel propensas a pérdida y manipulación retrasan hasta tres meses la consolidación de informes municipales.
+:::
+::: {.falla}
+### Datos vulnerables ante auditorías
+Sin garantías de no adulteración, los municipios enfrentan a la SMA y al MMA con registros que no resisten una auditoría técnica.
+:::
+:::
+
+[La solución]{.sec-label}
+
+## Una cadena de custodia digital, del territorio al ministerio
+
+::: {.cadena}
+::: {.paso}
+### Pesaje en ruta [PWA offline-first]{.tag}
+La recicladora de base registra peso, material y ubicación GPS desde su propio celular. Sin señal, el dato se guarda localmente y se sincroniza solo al volver la cobertura. Cero pérdida.
+:::
+::: {.paso}
+### Dato inmutable [Reglas de servidor]{.tag}
+Una vez subido, el pesaje no puede modificarse ni eliminarse. La inmutabilidad no es una promesa de interfaz: está codificada en el backend.
+:::
+::: {.paso}
+### Gobernanza en tiempo real [Dashboard DIMAO]{.tag}
+Las Direcciones de Medio Ambiente ven el avance hacia sus metas REP al instante, con cada punto del territorio en estado [Recolectado]{.estado-ok} o [Pendiente]{.estado-pendiente}.
+:::
+::: {.paso}
+### Reportabilidad certificada [Actas REP · PDF]{.tag}
+Actas y Certificados de Disposición Final se generan automáticamente con folio, listos para auditorías y proyectando interoperabilidad con SINADER.
+:::
+:::
+
+::: {.lock-note}
+🔒 **Inspiración de fondo:** siguiendo a Simondon, la tecnología no reemplaza el conocimiento empírico del reciclador — lo amplifica, traduciendo su trabajo diario en datos certificados que el Estado reconoce.
+:::
+
+[Medición de impacto]{.sec-label}
+
+## Indicadores duros, no relatos
+
+::: {.metricas}
+::: {.metrica}
+[TERT]{.sigla}
+
+### Tasa de Eficiencia de Recolección Territorial
+Porcentaje de puntos que pasan de Pendiente a Recolectado sobre el total catastrado en el periodo.
+
+::: {.formula}
+TERT = (P recolectados / P totales) × 100
+:::
+:::
+::: {.metrica}
+[CO₂e]{.sigla}
+
+### Mitigación de emisiones equivalentes
+Dióxido de carbono evitado al desviar PET de vertederos hacia valorización, sobre masa exacta e inmutable.
+
+::: {.formula}
+CO₂e = M PET × F emisión
+:::
+:::
+:::
+
+[Terreno y equipo]{.sec-label}
+
+## Quiénes estamos detrás
+
+::: {.bloque}
+::: {.persona}
+[EB]{.avatar}
+**Emilio Bustos Azúa**  
+Sociólogo · Universidad de Playa Ancha
+:::
+:::
+
+::: {.bloque}
+::: {.persona}
+[AM]{.avatar}
+**Ángel Muñoz**  
+Licenciado en Sociología · Universidad Alberto Hurtado
+:::
+:::
+
+::: {.cta-final}
+## ¿Tu comuna quiere datos de reciclaje que resistan cualquier auditoría?
+
+Conversemos. El piloto está diseñado para partir en la Región de Valparaíso, pero el modelo escala a cualquier gobierno local de Chile.
+
+[Escríbenos](colaboracion.qmd){.btn .btn-aqua}
+:::
