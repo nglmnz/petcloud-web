@@ -1,78 +1,73 @@
 ---
-title: "Caso piloto: Viña del Mar"
-subtitle: "Territorio, cooperativas y brecha de género en la cadena del reciclaje"
+title: "Viña del Mar"
+subtitle: "El territorio del reciclaje como sistema sociotécnico"
 ---
 
 ```{=html}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
-  #mapa-vina{ height:420px; border-radius:14px; border:1px solid rgba(14,59,67,.15); margin:1rem 0 0.5rem; }
+  .mapa-territorio{ height:420px; border-radius:14px; border:1px solid rgba(14,59,67,.15); margin:1rem 0 0.5rem; }
   .leyenda-mapa{ display:flex; gap:14px; flex-wrap:wrap; font-size:.78rem; margin-bottom:1.4rem; }
   .leyenda-mapa span{ display:flex; align-items:center; gap:6px; }
   .dot-ley{ width:12px; height:12px; border-radius:50%; flex-shrink:0; }
   .leaflet-popup-content b{ color:#0E3B43; }
-  .leaflet-popup-content .pill{
-    display:inline-block; font-size:.65rem; font-weight:700; padding:2px 8px;
-    border-radius:999px; margin-top:4px;
-  }
+  .leaflet-popup-content .pill{ display:inline-block; font-size:.65rem; font-weight:700; padding:2px 8px; border-radius:999px; margin-top:4px; }
   .pill-op{ background:rgba(46,125,50,.13); color:#2E7D32; }
   .pill-no{ background:rgba(224,122,47,.15); color:#E07A2F; }
   .pill-coop{ background:rgba(14,59,67,.1); color:#0E3B43; }
   .stat-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:1.4rem 0 2rem; }
-  .stat{ background:var(--petroleo,#0E3B43); color:#F5FBFA; border-radius:12px; padding:16px; }
+  .stat{ background:#0E3B43; color:#F5FBFA; border-radius:12px; padding:16px; }
   .stat .n{ font-size:1.6rem; font-weight:800; color:#6FCFC3; font-variant-numeric:tabular-nums; }
   .stat .l{ font-size:.75rem; opacity:.8; margin-top:2px; }
   .stat .f{ font-size:.65rem; opacity:.5; margin-top:6px; }
-  .barrera{ border-left:4px solid #E07A2F; background:#fff; border-radius:10px; padding:12px 16px; margin-bottom:10px; border:1px solid rgba(14,59,67,.1); border-left-width:4px; }
-  .barrera h4{ font-size:.9rem; color:#0E3B43; margin:0 0 4px; }
-  .barrera p{ font-size:.82rem; opacity:.8; margin:0; }
-  .cita{ background:rgba(14,59,67,.05); border-radius:10px; padding:12px 16px; font-size:.82rem; font-style:italic; margin:1rem 0; border-left:3px solid #6FCFC3; }
-  .cita cite{ font-style:normal; font-size:.72rem; opacity:.6; display:block; margin-top:4px; }
+  .brecha{ background:#fff; border:1px solid rgba(14,59,67,.1); border-left:4px solid #E07A2F; border-radius:10px; padding:14px 18px; margin-bottom:10px; }
+  .brecha h4{ font-size:.92rem; color:#0E3B43; margin:0 0 5px; }
+  .brecha p{ font-size:.84rem; opacity:.82; margin:0; }
 </style>
 ```
 
-[Territorio piloto]{.sec-label}
+[Territorio de referencia]{.sec-label}
 
-## Viña del Mar en números
+## ¿Por qué Viña del Mar?
 
-La tesis de Emilio Bustos Azúa (UPLA, 2024) sobre recicladoras de base en Valparaíso y Viña del Mar es la base empírica que ancla el piloto de PET CLOUD a este territorio. Los datos oficiales y el trabajo de campo revelan una realidad que PET CLOUD puede transformar con datos.
+Viña del Mar condensa, en una sola comuna, la tensión central de la Ley REP en Chile: un ecosistema de reciclaje en plena expansión organizativa que sigue operando sobre una infraestructura de información inexistente. La comuna cuadruplicó sus cooperativas de recicladores en cinco años y elevó su tasa de reciclaje del 1% histórico al 23%, con una meta declarada del 50%. Ese crecimiento, sin embargo, no está acompañado de un sistema que registre, certifique y haga visible el flujo de material que lo sostiene.
 
 ```{=html}
 <div class="stat-grid">
   <div class="stat">
     <div class="n">23%</div>
-    <div class="l">tasa de reciclaje comunal en 2024</div>
-    <div class="f">Meta: 50% gradual · Municipalidad de Viña del Mar, 2025</div>
+    <div class="l">tasa de reciclaje comunal en 2024, con meta del 50%</div>
+    <div class="f">Municipalidad de Viña del Mar, 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">1 → 4</div>
+    <div class="l">cooperativas de recicladores activas en cinco años</div>
+    <div class="f">País Circular, 2026</div>
   </div>
   <div class="stat">
     <div class="n">+130</div>
-    <div class="l">recicladores de base participaron en certificaciones REP</div>
+    <div class="l">recicladores de base en certificación de competencias REP</div>
     <div class="f">Ministerio del Medio Ambiente, 2023</div>
   </div>
   <div class="stat">
     <div class="n">60%</div>
-    <div class="l">de los recicladores de base son mujeres</div>
-    <div class="f">ANARCH · Gonzalez, 2020</div>
-  </div>
-  <div class="stat">
-    <div class="n">4</div>
-    <div class="l">cooperativas activas en Viña del Mar en 2026</div>
-    <div class="f">Hace 5 años solo había 1 · País Circular, 2026</div>
+    <div class="l">de quienes integran el gremio nacional de recicladores son mujeres</div>
+    <div class="f">ANARCH, 2020</div>
   </div>
 </div>
 ```
 
-## Mapa del territorio
+## El sistema en el mapa
 
-Puntos limpios, cooperativas y actores clave en la cadena del reciclaje de Viña del Mar. Esta es la infraestructura que PET CLOUD conectaría con datos trazables.
+La cadena viñamarina del reciclaje es un sistema sociotécnico distribuido: cooperativas que recolectan y clasifican, puntos limpios que concentran material, campanas de vidrio en las esquinas, y una Dirección de Medio Ambiente que debe reportar al nivel central. Cada nodo del mapa produce información — pesos, volúmenes, frecuencias — que hoy no se registra de forma trazable en ningún punto de la cadena.
 
 ```{=html}
-<div id="mapa-vina"></div>
+<div id="mapa-vina" class="mapa-territorio"></div>
 <div class="leyenda-mapa">
   <span><span class="dot-ley" style="background:#2E7D32"></span>Punto limpio operativo</span>
   <span><span class="dot-ley" style="background:#E07A2F"></span>Punto limpio no operativo</span>
-  <span><span class="dot-ley" style="background:#0E3B43"></span>Cooperativa / actor clave</span>
+  <span><span class="dot-ley" style="background:#0E3B43"></span>Cooperativa</span>
   <span><span class="dot-ley" style="background:#6FCFC3"></span>Institución municipal</span>
 </div>
 <script>
@@ -81,95 +76,57 @@ Puntos limpios, cooperativas y actores clave en la cadena del reciclaje de Viña
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
     attribution:'© <a href="https://openstreetmap.org">OpenStreetMap</a>',maxZoom:18
   }).addTo(map);
-
   function mk(color){ return L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)"></div>',iconAnchor:[7,7]}); }
-
   var puntos = [
-    // Puntos limpios operativos
-    { ll:[-33.000,-71.497], color:'#2E7D32', nombre:'Punto Limpio Reñaca Alto (COGESTA)',
-      desc:'<b>Punto Limpio Reñaca Alto</b><br>Camino Reñaca Alto, costado Complejo Everton<br>Mar–Vie 10–17h · Sáb 10–13h<br>PET, HDPE, PP, cartón, papel<br><span class="pill pill-op">Operativo</span><br><span class="pill pill-coop">Gestionado por COGESTA</span>' },
-    { ll:[-33.034,-71.551], color:'#2E7D32', nombre:'Punto Limpio Quinta Vergara',
-      desc:'<b>Punto Limpio Quinta Vergara (Potrerillos)</b><br>Parque Quinta Vergara, sector Potrerillos<br>Lun–Sáb 10–16h<br>Vidrio, tetrapack, latas, papel, cartón, plásticos<br><span class="pill pill-op">Operativo</span>' },
-    { ll:[-33.020,-71.546], color:'#2E7D32', nombre:'Punto Verde Open Plaza Santa Julia',
-      desc:'<b>Punto Verde Triciclos · Open Plaza Santa Julia</b><br>Separar botellas por color · PET 1, HDPE 2, PP 4 y 5<br><span class="pill pill-op">Operativo</span>' },
-    // Punto no operativo
-    { ll:[-33.032,-71.548], color:'#E07A2F', nombre:'Punto Limpio Quinta Vergara (anterior)',
-      desc:'<b>Punto Limpio Parque Quinta Vergara</b><br>Parque Potrerillos<br>Lun–Vie 9:30–17h · Sáb 9:30–13:30h<br><span class="pill pill-no">No operativo por el momento</span>' },
-    // Cooperativas y actores
-    { ll:[-33.002,-71.499], color:'#0E3B43', nombre:'COGESTA',
-      desc:'<b>COGESTA</b><br>Cooperativa de Gestión Ambiental<br>5 mujeres fundadoras · Reñaca Alto<br>Reciclaje + educación ambiental · Ley REP<br><a href="https://cogesta.cl" target="_blank">cogesta.cl</a><br><span class="pill pill-coop">Cooperativa de mujeres</span>' },
-    { ll:[-33.026,-71.545], color:'#0E3B43', nombre:'Cooperativa de Trabajo de Recicladores de Viña del Mar',
-      desc:'<b>Cooperativa de Trabajo de Recicladores de Viña del Mar</b><br>Gestionó el reciclaje del Festival de Viña 2026<br>Alianza con ReSimple<br><span class="pill pill-coop">Cooperativa</span>' },
-    { ll:[-33.029,-71.541], color:'#0E3B43', nombre:'Cooperativa de Recicladores con Base de Viña del Mar',
-      desc:'<b>Cooperativa de Recicladores con Base de Viña del Mar</b><br>Reconocida en el Día del Reciclador de Base 2026<br><span class="pill pill-coop">Cooperativa</span>' },
-    // Instituciones
-    { ll:[-33.040,-71.549], color:'#6FCFC3', nombre:'Depto. Servicios del Ambiente (DIMAO)',
-      desc:'<b>Departamento de Servicios del Ambiente</b><br>5 Oriente Nº890, Viña del Mar<br>Recibe cartones, tetrapack y plásticos<br>Programa "Viña Recicla"<br><span class="pill pill-coop">DIMAO · contraparte municipal</span>' },
+    { ll:[-33.000,-71.497], color:'#2E7D32', desc:'<b>Punto Limpio Reñaca Alto</b><br>Camino Reñaca Alto, costado Complejo Everton<br>PET, HDPE, PP, cartón, papel<br><span class="pill pill-op">Operativo</span><br><span class="pill pill-coop">Gestión: cooperativa COGESTA</span>' },
+    { ll:[-33.034,-71.551], color:'#2E7D32', desc:'<b>Punto Limpio Quinta Vergara</b><br>Parque Quinta Vergara, sector Potrerillos<br>Vidrio, tetrapack, latas, papel, cartón, plásticos<br><span class="pill pill-op">Operativo</span>' },
+    { ll:[-33.020,-71.546], color:'#2E7D32', desc:'<b>Punto Verde Open Plaza Santa Julia</b><br>Red Triciclos · PET 1, HDPE 2, PP 4 y 5<br><span class="pill pill-op">Operativo</span>' },
+    { ll:[-33.032,-71.548], color:'#E07A2F', desc:'<b>Punto Limpio Parque Potrerillos (anterior)</b><br><span class="pill pill-no">No operativo por el momento</span>' },
+    { ll:[-33.002,-71.499], color:'#0E3B43', desc:'<b>COGESTA</b><br>Cooperativa de Gestión Ambiental · Reñaca Alto<br>Cooperativa constituida al alero de la Ley REP<br>Reciclaje y educación ambiental<br><a href="https://cogesta.cl" target="_blank">cogesta.cl</a><br><span class="pill pill-coop">Cooperativa</span>' },
+    { ll:[-33.026,-71.545], color:'#0E3B43', desc:'<b>Cooperativa de Trabajo de Recicladores de Viña del Mar</b><br>Operó el reciclaje del Festival de Viña 2026 junto a ReSimple<br><span class="pill pill-coop">Cooperativa</span>' },
+    { ll:[-33.029,-71.541], color:'#0E3B43', desc:'<b>Cooperativa de Recicladores con Base de Viña del Mar</b><br>Reconocida en el Día del Reciclador de Base 2026<br><span class="pill pill-coop">Cooperativa</span>' },
+    { ll:[-33.040,-71.549], color:'#6FCFC3', desc:'<b>Departamento de Servicios del Ambiente</b><br>5 Oriente Nº890 · Programa "Viña Recicla"<br>Recibe cartones, tetrapack y plásticos<br><span class="pill pill-coop">Contraparte municipal</span>' },
   ];
-
   puntos.forEach(function(p){
-    L.marker(p.ll, {icon: mk(p.color)})
-      .addTo(map)
+    L.marker(p.ll, {icon: mk(p.color)}).addTo(map)
       .bindPopup('<div style="font-size:.82rem;max-width:220px;line-height:1.45">'+p.desc+'</div>');
   });
 })();
 </script>
 ```
 
-[Hallazgos del territorio]{.sec-label}
+*Ubicaciones referenciales según información pública disponible.*
 
-## Lo que la investigación de Emilio reveló
+[Diagnóstico estructural]{.sec-label}
 
-La tesis *"Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920"* (Bustos Azúa, 2024) entrevistó a cinco recicladoras de base — Camila, Myriam, Maritza, Rosa y Javiera — y documentó con precisión las tres fallas estructurales que PET CLOUD intenta resolver desde la tecnología.
+## Tres brechas del sistema
 
-::: {.barrera}
-#### Sin espacio de acopio ni infraestructura
-La totalidad de las entrevistadas señaló operar desde sus hogares o espacios improvisados, en conflicto permanente con vecinos y sin condiciones sanitarias básicas.
+La investigación territorial disponible sobre las comunas de Valparaíso y Viña del Mar permite identificar tres brechas estructurales entre la infraestructura física del reciclaje y la infraestructura de información que la Ley REP exige:
+
+::: {.brecha}
+#### El dato nace y muere en el mismo lugar
+El pesaje ocurre en la ruta, en el punto limpio o en el acopio, pero se registra en papel o no se registra. El material recuperado se contabiliza recién al final de la cadena de valorización, de forma agregada, con desfases de meses. La eficiencia de cada punto y cada ruta es estructuralmente invisible para quien administra el sistema.
 :::
 
-::: {.cita}
-"Lo que más se necesita es un lugar de acopio. No poder reciclar cerca de la casa dificulta mucho porque sanidad es lo primero que debemos tener."
-<cite>— Maritza, recicladora de base, Valparaíso · en Bustos Azúa (2024)</cite>
+::: {.brecha}
+#### La certificación presupone lo que no existe
+Los procesos de formalización de la Ley 20.920 exigen evidencia documentada del trabajo realizado. Pero producir esa evidencia requiere infraestructura, tiempo y capacidades administrativas que el sector — mayoritariamente femenino y con doble jornada de trabajo remunerado y de cuidados — no tiene cómo costear. El requisito diseñado para incluir opera, en la práctica, como barrera de entrada.
 :::
 
-::: {.barrera}
-#### La Ley REP exige lo que no existe
-Los requisitos de certificación y registro de la Ley 20.920 suponen recursos, tiempo e infraestructura que las recicladoras no tienen — especialmente las mujeres con doble carga de trabajo.
+::: {.brecha}
+#### Trabajo real, reconocimiento imposible
+Sin registro verificable, las toneladas que las cooperativas recuperan no existen para efectos de convenios municipales, fondos públicos ni metas ministeriales. La brecha de datos no es un problema técnico menor: es el mecanismo concreto por el cual un trabajo esencial permanece institucionalmente invisible.
 :::
 
-::: {.cita}
-"La ley suena linda, pero no tenemos acceso a nada. Nos piden certificaciones, nos piden cumplir con cosas que no podemos, porque no hay infraestructura ni recursos para nosotras."
-<cite>— Maritza · en Bustos Azúa (2024)</cite>
-:::
+## Lo que este territorio le enseña al diseño
 
-::: {.barrera}
-#### El dato de pesaje no existe como tal
-Los pesajes son informales, no trazables y no acumulables. Sin un registro verificable, el trabajo de las cooperativas es invisible para el municipio, la DIMAO y el Ministerio del Medio Ambiente.
-:::
+PET CLOUD no parte de la tecnología hacia el territorio, sino al revés. El diagnóstico territorial define los requisitos del sistema: si el pesaje ocurre en ruta y sin señal, el registro debe ser móvil y offline-first; si la certificación exige evidencia, el dato debe ser inmutable y auditable desde su origen; si el reconocimiento depende de reportabilidad, las Actas REP deben generarse automáticamente desde la masa verificada. Cada componente de la arquitectura responde a una brecha documentada, no a una funcionalidad imaginada.
 
-::: {.cita}
-"Nos exigen cosas que parecen para empresas grandes. ¿Cómo vamos a certificar algo si ni siquiera tenemos un baño?"
-<cite>— Myriam, presidenta de asociación de recicladores · en Bustos Azúa (2024)</cite>
-:::
+## Fundamento
 
-[Cómo PET CLOUD responde]{.sec-label}
+El diagnóstico territorial de esta página se fundamenta en Bustos Azúa (2024), investigación cualitativa desarrollada en la Universidad de Playa Ancha sobre las barreras de género en la implementación de la Ley 20.920 en las comunas de Valparaíso y Viña del Mar, complementada con fuentes públicas municipales y sectoriales.
 
-## Del hallazgo al diseño
-
-La tesis de Emilio no es solo un antecedente — es el diseño funcional del sistema. Cada barrera documentada tiene una respuesta directa en la arquitectura de PET CLOUD:
-
-| Barrera documentada | Respuesta de PET CLOUD |
-|---|---|
-| Sin registro verificable de pesajes | PWA de registro offline-first + dato inmutable en Firestore |
-| Formalización imposible sin evidencia | Actas REP en PDF con folio, generadas automáticamente |
-| DIMAO sin datos en tiempo real | Dashboard de metas REP con estados por punto del territorio |
-| Trabajo invisible para el Estado | Trazabilidad georreferenciada que convierte el kilo físico en dato certificado |
-
-El piloto de 8 semanas propuesto para la Región de Valparaíso parte con las cooperativas que ya operan en este mapa — COGESTA en Reñaca Alto es el punto de entrada más natural, por su perfil (mujeres, Ley REP, educación ambiental) y su disposición documentada a la formalización.
-
-## Referencias del territorio
-
-- Bustos Azúa, J. E. (2024). *Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920*. Universidad de Playa Ancha.
-- Ministerio del Medio Ambiente (2023). Municipio de Viña del Mar y Seremi inician proyecto en apoyo a recicladores de base.
-- País Circular (2026). Recicladores de base organizados: en cinco años cooperativas dan salto de 6 a 47.
-- Municipalidad de Viña del Mar (2025). Viña del Mar alcanzó un 23% de reciclaje en 2024.
+- Bustos Azúa, J. E. (2024). *Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920 (Ley REP)*. Trabajo de titulación, Universidad de Playa Ancha.
+- Ministerio del Medio Ambiente (2023). Proyecto de apoyo a recicladores de base de Viña del Mar.
+- Municipalidad de Viña del Mar (2025). Balance de gestión: 23% de reciclaje comunal en 2024.
+- País Circular (2026). Alianzas impulsan aumento de cooperativas de recicladores de base a nivel nacional.

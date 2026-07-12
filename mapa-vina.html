@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#F5FBFA}
+  #map{height:420px;width:100%}
+  .pill{display:inline-block;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-top:4px}
+  .pill-op{background:rgba(46,125,50,.13);color:#2E7D32}
+  .pill-no{background:rgba(224,122,47,.15);color:#E07A2F}
+  .pill-coop{background:rgba(14,59,67,.1);color:#0E3B43}
+  .leaflet-popup-content{font-size:.82rem;line-height:1.45;max-width:220px}
+  .leaflet-popup-content b{color:#0E3B43}
+  .leyenda{
+    position:absolute;bottom:24px;left:10px;z-index:1000;
+    background:#fff;border-radius:10px;padding:8px 12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);font-size:.72rem;
+    display:flex;flex-direction:column;gap:5px;
+  }
+  .ley-item{display:flex;align-items:center;gap:7px}
+  .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="leyenda">
+  <div class="ley-item"><div class="dot" style="background:#2E7D32"></div>Punto limpio operativo</div>
+  <div class="ley-item"><div class="dot" style="background:#E07A2F"></div>Punto limpio no operativo</div>
+  <div class="ley-item"><div class="dot" style="background:#0E3B43"></div>Cooperativa / actor</div>
+  <div class="ley-item"><div class="dot" style="background:#6FCFC3"></div>Institución municipal</div>
+</div>
+<script>
+var map = L.map('map').setView([-33.024, -71.555], 12);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  attribution:'© <a href="https://openstreetmap.org">OpenStreetMap</a>',maxZoom:18
+}).addTo(map);
+
+function mk(c){
+  return L.divIcon({className:'',
+    html:'<div style="width:14px;height:14px;border-radius:50%;background:'+c+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)"></div>',
+    iconAnchor:[7,7]});
+}
+
+var pts = [
+  {ll:[-33.000,-71.497],c:'#2E7D32',
+   p:'<b>Punto Limpio Reñaca Alto</b><br>Camino Reñaca Alto, costado Everton<br>Mar–Vie 10–17h · Sáb 10–13h<br>PET, HDPE, PP, cartón, papel<br><span class="pill pill-op">Operativo</span><br><span class="pill pill-coop">Gestionado por COGESTA</span>'},
+  {ll:[-33.034,-71.551],c:'#2E7D32',
+   p:'<b>Punto Limpio Quinta Vergara</b><br>Parque Quinta Vergara, Potrerillos<br>Lun–Sáb 10–16h<br>Vidrio, tetrapack, latas, papel, cartón, plásticos<br><span class="pill pill-op">Operativo</span>'},
+  {ll:[-33.020,-71.546],c:'#2E7D32',
+   p:'<b>Punto Verde Triciclos · Open Plaza Santa Julia</b><br>Separar botellas por color<br>PET 1, HDPE 2, PP 4 y 5<br><span class="pill pill-op">Operativo</span>'},
+  {ll:[-33.032,-71.548],c:'#E07A2F',
+   p:'<b>Punto Limpio Quinta Vergara (anterior)</b><br>Parque Potrerillos<br>Lun–Vie 9:30–17h · Sáb 9:30–13:30h<br><span class="pill pill-no">No operativo por el momento</span>'},
+  {ll:[-33.002,-71.499],c:'#0E3B43',
+   p:'<b>COGESTA</b><br>Cooperativa de Gestión Ambiental<br>5 mujeres fundadoras · Reñaca Alto<br>Reciclaje + educación ambiental · Ley REP<br><a href="https://cogesta.cl" target="_blank">cogesta.cl</a><br><span class="pill pill-coop">Cooperativa de mujeres</span>'},
+  {ll:[-33.026,-71.545],c:'#0E3B43',
+   p:'<b>Cooperativa de Trabajo de Recicladores de Viña del Mar</b><br>Gestionó el reciclaje del Festival de Viña 2026<br>Alianza con ReSimple<br><span class="pill pill-coop">Cooperativa</span>'},
+  {ll:[-33.029,-71.541],c:'#0E3B43',
+   p:'<b>Cooperativa de Recicladores con Base de Viña del Mar</b><br>Reconocida el Día del Reciclador de Base 2026<br><span class="pill pill-coop">Cooperativa</span>'},
+  {ll:[-33.040,-71.549],c:'#6FCFC3',
+   p:'<b>Depto. Servicios del Ambiente (DIMAO)</b><br>5 Oriente Nº890, Viña del Mar<br>Recibe cartones, tetrapack y plásticos<br>Programa "Viña Recicla"<br><span class="pill pill-coop">Contraparte municipal</span>'},
+];
+
+pts.forEach(function(p){
+  L.marker(p.ll,{icon:mk(p.c)}).addTo(map).bindPopup(p.p);
+});
+</script>
+</body>
+</html>
