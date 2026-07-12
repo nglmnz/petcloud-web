@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --petroleo:#0E3B43; --petroleo-2:#14545E; --aqua:#6FCFC3;
+    --verde:#2E7D32; --naranja:#E07A2F; --hueso:#F5FBFA; --tinta:#16262A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--hueso);font-family:-apple-system,'Inter',system-ui,sans-serif;overflow:hidden}
+
+  #escena{width:100%;height:420px;position:relative}
+
+  /* Fondo de etapas */
+  .etapa{
+    position:absolute;top:0;height:100%;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:10px;padding:16px 8px;
+    opacity:0;transition:opacity .6s;
+  }
+  .etapa.activa{opacity:1}
+  .etapa .icono{font-size:3rem;line-height:1}
+  .etapa h2{font-size:.85rem;font-weight:800;color:var(--petroleo);text-align:center;max-width:160px}
+  .etapa p{font-size:.75rem;color:var(--tinta);opacity:.75;text-align:center;max-width:180px;line-height:1.4}
+
+  /* Partícula de dato viajando */
+  #dato{
+    position:absolute;width:36px;height:36px;border-radius:50%;
+    background:var(--aqua);box-shadow:0 0 0 6px rgba(111,207,195,.25);
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.1rem;z-index:10;
+    transition:left .9s cubic-bezier(.4,0,.2,1), top .9s cubic-bezier(.4,0,.2,1), opacity .4s;
+    opacity:0;
+  }
+
+  /* Línea de conexión */
+  #linea{
+    position:absolute;top:50%;height:3px;background:linear-gradient(90deg,var(--aqua),var(--verde));
+    left:12%;right:12%;transform:translateY(-50%);border-radius:999px;
+    transform-origin:left;scale:1 1;opacity:.15;
+    transition:opacity .5s;
+  }
+
+  /* Barra de progreso */
+  #progreso{
+    position:absolute;bottom:16px;left:50%;transform:translateX(-50%);
+    display:flex;gap:8px;
+  }
+  .dot-p{
+    width:8px;height:8px;border-radius:50%;background:rgba(14,59,67,.2);
+    transition:background .4s;
+  }
+  .dot-p.on{background:var(--aqua)}
+
+  /* Label flotante del dato */
+  #label-dato{
+    position:absolute;top:calc(50% - 52px);font-size:.65rem;font-weight:700;
+    color:var(--petroleo);background:#fff;border:1px solid rgba(111,207,195,.5);
+    padding:3px 8px;border-radius:999px;white-space:nowrap;opacity:0;
+    transition:left .9s cubic-bezier(.4,0,.2,1), opacity .4s;
+    transform:translateX(-50%);
+  }
+
+  /* Badge de inmutabilidad */
+  #badge{
+    position:absolute;top:18px;right:20px;font-size:.65rem;font-weight:700;
+    background:rgba(46,125,50,.12);color:var(--verde);
+    padding:4px 10px;border-radius:999px;opacity:0;transition:opacity .5s;
+    display:flex;align-items:center;gap:5px;
+  }
+
+  /* Botón replay */
+  #replay{
+    position:absolute;bottom:40px;right:20px;font-size:.7rem;font-weight:700;
+    color:var(--petroleo);background:rgba(111,207,195,.2);border:1px solid var(--aqua);
+    padding:5px 12px;border-radius:999px;cursor:pointer;opacity:0;transition:opacity .4s;
+  }
+</style>
+</head>
+<body>
+<div id="escena">
+
+  <div id="linea"></div>
+
+  <!-- 5 etapas distribuidas horizontalmente -->
+  <div class="etapa" id="e0" style="left:4%;width:18%">
+    <div class="icono">♻️</div>
+    <h2>Recolectora en ruta</h2>
+    <p>Cooperativa recolecta PET en el territorio</p>
+  </div>
+
+  <div class="etapa" id="e1" style="left:22%;width:18%">
+    <div class="icono">📱</div>
+    <h2>Registro en PWA</h2>
+    <p>Pesaje + GPS + material desde el celular, incluso sin señal</p>
+  </div>
+
+  <div class="etapa" id="e2" style="left:40%;width:18%">
+    <div class="icono">🔒</div>
+    <h2>Firestore inmutable</h2>
+    <p>El dato se sella: nadie puede modificarlo ni borrarlo</p>
+  </div>
+
+  <div class="etapa" id="e3" style="left:58%;width:18%">
+    <div class="icono">📊</div>
+    <h2>Dashboard DIMAO</h2>
+    <p>Municipio ve avance de metas REP en tiempo real</p>
+  </div>
+
+  <div class="etapa" id="e4" style="left:76%;width:20%">
+    <div class="icono">📄</div>
+    <h2>Acta REP certificada</h2>
+    <p>PDF con folio listo para auditoría del MMA</p>
+  </div>
+
+  <!-- Partícula viajera -->
+  <div id="dato">⚖️</div>
+  <div id="label-dato">pesaje registrado</div>
+
+  <div id="badge">🔒 dato inmutable</div>
+
+  <!-- Progreso -->
+  <div id="progreso">
+    <div class="dot-p" id="d0"></div>
+    <div class="dot-p" id="d1"></div>
+    <div class="dot-p" id="d2"></div>
+    <div class="dot-p" id="d3"></div>
+    <div class="dot-p" id="d4"></div>
+  </div>
+
+  <div id="replay" onclick="iniciar()">↺ Ver de nuevo</div>
+</div>
+
+<script>
+const etapas = [
+  { id:'e0', x:13, emoji:'⚖️', label:'material recolectado' },
+  { id:'e1', x:31, emoji:'📱', label:'pesaje registrado' },
+  { id:'e2', x:49, emoji:'🔒', label:'dato sellado' },
+  { id:'e3', x:67, emoji:'📊', label:'meta actualizada' },
+  { id:'e4', x:86, emoji:'📄', label:'acta generada' },
+];
+
+const dato     = document.getElementById('dato');
+const labelD   = document.getElementById('label-dato');
+const badge    = document.getElementById('badge');
+const replay   = document.getElementById('replay');
+const linea    = document.getElementById('linea');
+
+function posX(pct){ return `calc(${pct}% - 18px)`; }
+
+function mostrarEtapa(i){
+  // Activar etapa
+  document.getElementById(etapas[i].id).classList.add('activa');
+  // Mover dato
+  dato.style.opacity = '1';
+  dato.style.left    = posX(etapas[i].x);
+  dato.style.top     = 'calc(50% - 18px)';
+  dato.textContent   = etapas[i].emoji;
+  // Mover label
+  labelD.style.opacity = '1';
+  labelD.style.left    = `${etapas[i].x}%`;
+  labelD.textContent   = etapas[i].label;
+  // Dot de progreso
+  document.getElementById('d'+i).classList.add('on');
+  // Badge de inmutabilidad al llegar a Firestore
+  if(i === 2) badge.style.opacity = '1';
+  // Línea más visible
+  linea.style.opacity = String(0.15 + i * 0.15);
+}
+
+function iniciar(){
+  // Reset
+  etapas.forEach(e => document.getElementById(e.id).classList.remove('activa'));
+  document.querySelectorAll('.dot-p').forEach(d => d.classList.remove('on'));
+  badge.style.opacity  = '0';
+  replay.style.opacity = '0';
+  dato.style.opacity   = '0';
+  labelD.style.opacity = '0';
+  linea.style.opacity  = '0.15';
+
+  let i = 0;
+  function paso(){
+    mostrarEtapa(i);
+    i++;
+    if(i < etapas.length){
+      setTimeout(paso, i === 2 ? 1800 : 1400); // pausa más larga en Firestore
+    } else {
+      setTimeout(()=> replay.style.opacity = '1', 800);
+    }
+  }
+  setTimeout(paso, 400);
+}
+
+// Arrancar solo cuando el iframe es visible
+const obs = new IntersectionObserver(entries => {
+  if(entries[0].isIntersecting){ obs.disconnect(); iniciar(); }
+}, { threshold: 0.3 });
+obs.observe(document.getElementById('escena'));
+</script>
+</body>
+</html>
