@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arquitectura – PET CLOUD</title>
+<title>Pedro Aguirre Cerda – PET CLOUD</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">El proyecto</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./arquitectura.html" aria-current="page"> 
+    <a class="nav-link" href="./arquitectura.html"> 
 <span class="menu-text">Arquitectura</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Viña del Mar</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pac.html"> 
+    <a class="nav-link active" href="./pac.html" aria-current="page"> 
 <span class="menu-text">Pedro Aguirre Cerda</span></a>
   </li>  
   <li class="nav-item">
@@ -134,11 +134,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#visión-general" id="toc-visión-general" class="nav-link active" data-scroll-target="#visión-general">Visión general</a></li>
-  <li><a href="#componentes" id="toc-componentes" class="nav-link" data-scroll-target="#componentes">Componentes</a></li>
-  <li><a href="#estado-de-implementación" id="toc-estado-de-implementación" class="nav-link" data-scroll-target="#estado-de-implementación">Estado de implementación</a></li>
-  <li><a href="#ruta-de-consolidación" id="toc-ruta-de-consolidación" class="nav-link" data-scroll-target="#ruta-de-consolidación">Ruta de consolidación</a></li>
-  <li><a href="#decisiones-abiertas" id="toc-decisiones-abiertas" class="nav-link" data-scroll-target="#decisiones-abiertas">Decisiones abiertas</a></li>
+  <li><a href="#una-comuna-que-ya-decidió-reciclar" id="toc-una-comuna-que-ya-decidió-reciclar" class="nav-link active" data-scroll-target="#una-comuna-que-ya-decidió-reciclar">Una comuna que ya decidió reciclar</a></li>
+  <li><a href="#el-territorio-en-el-mapa" id="toc-el-territorio-en-el-mapa" class="nav-link" data-scroll-target="#el-territorio-en-el-mapa">El territorio en el mapa</a></li>
+  <li><a href="#lo-que-pac-tiene-y-lo-que-le-falta" id="toc-lo-que-pac-tiene-y-lo-que-le-falta" class="nav-link" data-scroll-target="#lo-que-pac-tiene-y-lo-que-le-falta">Lo que PAC tiene y lo que le falta</a></li>
+  <li><a href="#qué-proponemos-al-municipio" id="toc-qué-proponemos-al-municipio" class="nav-link" data-scroll-target="#qué-proponemos-al-municipio">Qué proponemos al municipio</a></li>
+  <li><a href="#fuentes" id="toc-fuentes" class="nav-link" data-scroll-target="#fuentes">Fuentes</a></li>
   </ul>
 </nav>
     </div>
@@ -147,8 +147,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Arquitectura</h1>
-<p class="subtitle lead">Documento vivo — versión MVP</p>
+<h1 class="title">Pedro Aguirre Cerda</h1>
+<p class="subtitle lead">Caracterización territorial para un piloto de trazabilidad REP</p>
 </div>
 
 
@@ -165,42 +165,132 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="visión-general" class="level2">
-<h2 class="anchored" data-anchor-id="visión-general">Visión general</h2>
-<iframe src="flujo.html" width="100%" height="420" style="border:none;border-radius:14px;"></iframe>
-</section>
-<section id="componentes" class="level2">
-<h2 class="anchored" data-anchor-id="componentes">Componentes</h2>
-<div class="bloque">
-<p><strong>PWA de registro (frontend operario).</strong> Usabilidad simplificada para pesaje en ruta: peso, material, foto opcional, geolocalización automática. Persistencia local (IndexedDB) con sincronización asíncrona al recuperar señal.</p>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mapa-territorio{ height:420px; border-radius:14px; border:1px solid rgba(14,59,67,.15); margin:1rem 0 0.5rem; }
+  .leyenda-mapa{ display:flex; gap:14px; flex-wrap:wrap; font-size:.78rem; margin-bottom:1.4rem; }
+  .leyenda-mapa span{ display:flex; align-items:center; gap:6px; }
+  .dot-ley{ width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+  .leaflet-popup-content b{ color:#0E3B43; }
+  .leaflet-popup-content .pill{ display:inline-block; font-size:.65rem; font-weight:700; padding:2px 8px; border-radius:999px; margin-top:4px; }
+  .pill-op{ background:rgba(46,125,50,.13); color:#2E7D32; }
+  .pill-gen{ background:rgba(224,122,47,.15); color:#E07A2F; }
+  .pill-inst{ background:rgba(14,59,67,.1); color:#0E3B43; }
+  .stat-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:1.4rem 0 2rem; }
+  .stat{ background:#0E3B43; color:#F5FBFA; border-radius:12px; padding:16px; }
+  .stat .n{ font-size:1.5rem; font-weight:800; color:#6FCFC3; font-variant-numeric:tabular-nums; }
+  .stat .l{ font-size:.75rem; opacity:.8; margin-top:2px; }
+  .stat .f{ font-size:.65rem; opacity:.5; margin-top:6px; }
+  .oportunidad{ background:#fff; border:1px solid rgba(14,59,67,.1); border-left:4px solid #6FCFC3; border-radius:10px; padding:14px 18px; margin-bottom:10px; }
+  .oportunidad h4{ font-size:.92rem; color:#0E3B43; margin:0 0 5px; }
+  .oportunidad p{ font-size:.84rem; opacity:.82; margin:0; }
+</style>
+<p><span class="sec-label">Propuesta de territorio piloto · Región Metropolitana</span></p>
+<section id="una-comuna-que-ya-decidió-reciclar" class="level2">
+<h2 class="anchored" data-anchor-id="una-comuna-que-ya-decidió-reciclar">Una comuna que ya decidió reciclar</h2>
+<p>Pedro Aguirre Cerda no parte de cero. La comuna cuenta con una red de cuatro puntos limpios, un programa de reciclaje domiciliario en expansión hacia el 100% de cobertura junto a MSUR y ReSimple, y una trayectoria institucional que va desde la certificación ambiental municipal hasta la recuperación de más de 400 toneladas de material en los primeros nueve meses de 2025. Lo que la comuna todavía no tiene — como ningún municipio de Chile — es la capa de datos que haga ese esfuerzo trazable, auditable y visible ante el nivel central.</p>
+<div class="stat-grid">
+  <div class="stat">
+    <div class="n">104.462</div>
+    <div class="l">habitantes en 9,4 km² — una de las comunas más densas del Gran Santiago</div>
+    <div class="f">Proyección INE 2024</div>
+  </div>
+  <div class="stat">
+    <div class="n">405 ton</div>
+    <div class="l">recuperadas entre enero y septiembre de 2025 (221 t envases + 184 t vidrio)</div>
+    <div class="f">Programa Msur Recicla-PAC, 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">49% → 100%</div>
+    <div class="l">ampliación de cobertura del reciclaje domiciliario: 31.000 hogares, 24.000 kits</div>
+    <div class="f">MSUR · ReSimple · Municipalidad de PAC, oct. 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">44</div>
+    <div class="l">campanas de vidrio administradas por el programa comunal</div>
+    <div class="f">Programa Msur Recicla-PAC, 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">4</div>
+    <div class="l">puntos limpios, incluido el recinto de 400 m² de Enrique Matte con monitores permanentes</div>
+    <div class="f">Municipalidad de PAC · Santiago Recicla</div>
+  </div>
+  <div class="stat">
+    <div class="n">2,5 M ton</div>
+    <div class="l">de productos agrícolas mueve al año Lo Valledor, el mayor mercado mayorista del país, dentro de la comuna</div>
+    <div class="f">Municipalidad de PAC</div>
+  </div>
 </div>
-<div class="bloque">
-<p><strong>Motor de datos (Firebase / Firestore).</strong> NoSQL asíncrono en la nube. La inmutabilidad no es una promesa de interfaz: es una regla de servidor (<code>allow update, delete: if false</code>) sobre la colección de pesajes.</p>
-</div>
-<div class="bloque">
-<p><strong>Dashboard de gobernanza (frontend municipal).</strong> Visualización del cumplimiento de metas REP, mapa de puntos con estados <span class="estado-ok">Recolectado</span> / <span class="estado-pendiente">Pendiente</span>, y exportación de reportes.</p>
-</div>
 </section>
-<section id="estado-de-implementación" class="level2">
-<h2 class="anchored" data-anchor-id="estado-de-implementación">Estado de implementación</h2>
-<p>La inmutabilidad de los pesajes ya está implementada como regla de servidor, junto con autenticación, validación de datos en frontera (rangos de peso, identidad del registrador) y auditoría de origen por usuario.</p>
+<section id="el-territorio-en-el-mapa" class="level2">
+<h2 class="anchored" data-anchor-id="el-territorio-en-el-mapa">El territorio en el mapa</h2>
+<div id="mapa-pac" class="mapa-territorio"></div>
+<div class="leyenda-mapa">
+  <span><span class="dot-ley" style="background:#2E7D32"></span>Punto limpio</span>
+  <span><span class="dot-ley" style="background:#E07A2F"></span>Gran generador de residuos</span>
+  <span><span class="dot-ley" style="background:#0E3B43"></span>Institución / hito territorial</span>
+</div>
+<script>
+(function(){
+  var map = L.map('mapa-pac').setView([-33.484, -70.678], 14);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'© <a href="https://openstreetmap.org">OpenStreetMap</a>',maxZoom:18
+  }).addTo(map);
+  function mk(color){ return L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)"></div>',iconAnchor:[7,7]}); }
+  var puntos = [
+    { ll:[-33.4765,-70.6710], color:'#2E7D32', desc:'<b>Punto Limpio Enrique Matte</b><br>Enrique Matte 2280 · 400 m²<br>Monitores permanentes · L–J 9:00–16:30, V 9–14, S 10–18<br>Papel, cartón, PET, HDPE, aluminio, vidrio<br>Financiado por Santiago Recicla (GORE–Subdere)<br><span class="pill pill-op">Punto limpio principal</span>' },
+    { ll:[-33.4818,-70.6745], color:'#2E7D32', desc:'<b>Punto Limpio Municipalidad</b><br>Av. Salesianos 2029 · 24 horas<br>Papel, cartón, tetrapack, aluminio, PET, vidrio<br><span class="pill pill-op">Punto limpio</span>' },
+    { ll:[-33.4890,-70.6740], color:'#2E7D32', desc:'<b>Punto Limpio Estadio Municipal</b><br>La Marina 2256–2498 · 24 horas<br><span class="pill pill-op">Punto limpio</span>' },
+    { ll:[-33.4870,-70.6650], color:'#2E7D32', desc:'<b>Punto Limpio Liceo Eugenio Pereira Salas</b><br>24 horas · Papel, cartón, tetrapack, aluminio, PET, vidrio<br><span class="pill pill-op">Punto limpio</span>' },
+    { ll:[-33.4780,-70.6940], color:'#E07A2F', desc:'<b>Lo Valledor</b><br>Mayor mercado hortofrutícola mayorista de Chile<br>2,5 millones ton/año · 33 ha · 30 mil visitas diarias<br>Gran generador de residuos orgánicos y de embalaje<br><span class="pill pill-gen">Gran generador</span>' },
+    { ll:[-33.4870,-70.6860], color:'#0E3B43', desc:'<b>Parque André Jarlán</b><br>11 hectáreas construidas sobre un antiguo vertedero de residuos domiciliarios<br>El principal pulmón verde comunal es también la memoria territorial del problema<br><span class="pill pill-inst">Hito territorial</span>' },
+    { ll:[-33.4830,-70.6770], color:'#0E3B43', desc:'<b>Municipalidad de Pedro Aguirre Cerda</b><br>Dirección de Medio Ambiente<br>Contraparte del programa Msur Recicla-PAC<br><span class="pill pill-inst">Contraparte institucional</span>' },
+  ];
+  puntos.forEach(function(p){
+    L.marker(p.ll, {icon: mk(p.color)}).addTo(map)
+      .bindPopup('<div style="font-size:.82rem;max-width:230px;line-height:1.45">'+p.desc+'</div>');
+  });
+})();
+</script>
+<p><em>Ubicaciones referenciales según información pública disponible; a validar con la Dirección de Medio Ambiente.</em></p>
+<p><span class="sec-label">La oportunidad</span></p>
 </section>
-<section id="ruta-de-consolidación" class="level2">
-<h2 class="anchored" data-anchor-id="ruta-de-consolidación">Ruta de consolidación</h2>
+<section id="lo-que-pac-tiene-y-lo-que-le-falta" class="level2">
+<h2 class="anchored" data-anchor-id="lo-que-pac-tiene-y-lo-que-le-falta">Lo que PAC tiene y lo que le falta</h2>
+<section id="tiene-infraestructura-y-voluntad-política" class="level4 oportunidad">
+<h4 class="anchored" data-anchor-id="tiene-infraestructura-y-voluntad-política">Tiene: infraestructura y voluntad política</h4>
+<p>Cuatro puntos limpios, un programa domiciliario en expansión al 100% de cobertura, convenio activo con un Gran Sistema de Gestión (ReSimple vía MSUR), y certificación ambiental municipal. Pedro Aguirre Cerda está entre las comunas del sur de Santiago que más ha invertido en la transición hacia la economía circular.</p>
+</section>
+<section id="tiene-escala-manejable-y-densidad-ideal-para-pilotar" class="level4 oportunidad">
+<h4 class="anchored" data-anchor-id="tiene-escala-manejable-y-densidad-ideal-para-pilotar">Tiene: escala manejable y densidad ideal para pilotar</h4>
+<p>9,4 km² completamente urbanos, 104 mil habitantes, distancias cortas entre puntos. Es el territorio perfecto para un piloto de trazabilidad: suficientemente denso para generar datos significativos, suficientemente acotado para controlarlo en 8 semanas.</p>
+</section>
+<section id="le-falta-la-capa-de-datos-en-origen" class="level4 oportunidad">
+<h4 class="anchored" data-anchor-id="le-falta-la-capa-de-datos-en-origen">Le falta: la capa de datos en origen</h4>
+<p>Las 405 toneladas recuperadas en 2025 se conocen de forma agregada, al final de la cadena. Ningún actor del sistema puede responder hoy con evidencia auditable: ¿qué punto rinde más?, ¿qué ruta es más eficiente?, ¿cuántos kilos aportó cada recuperador?, ¿cómo evoluciona el cumplimiento REP semana a semana? Esa es exactamente la capa que PET CLOUD construye.</p>
+</section>
+</section>
+<section id="qué-proponemos-al-municipio" class="level2">
+<h2 class="anchored" data-anchor-id="qué-proponemos-al-municipio">Qué proponemos al municipio</h2>
+<p>Un <strong>piloto de 8 semanas sin costo de software</strong>, consistente en:</p>
+<ol type="1">
+<li><strong>Registro digital de pesajes en origen</strong> en uno o dos puntos limpios de la comuna, mediante la PWA de PET CLOUD operada por el personal del punto o recicladores de base del territorio, con geolocalización y funcionamiento sin señal.</li>
+<li><strong>Dato inmutable desde el primer día</strong>: cada pesaje queda sellado en el backend — sin posibilidad de modificación ni borrado — construyendo un historial auditable ante el MMA y la SMA.</li>
+<li><strong>Dashboard para la Dirección de Medio Ambiente</strong> con el avance en tiempo real: kilos por punto, por material y por período, exportable para reportes y postulaciones a fondos (Fondo para el Reciclaje, convenios SIG).</li>
+<li><strong>Informe final de resiliencia y proyección</strong>: evaluación conjunta de resultados y hoja de ruta para escalar al resto de la red comunal.</li>
+</ol>
+<p>El aprendizaje del ecosistema de Viña del Mar — donde las cooperativas se cuadruplicaron en cinco años pero el dato de origen sigue sin existir — indica que la ventana de oportunidad está en instalar la trazabilidad <em>antes</em> de que la fiscalización REP la exija, no después.</p>
+</section>
+<section id="fuentes" class="level2">
+<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
 <ul>
-<li><strong>Sprint 0:</strong> endurecimiento de seguridad — restricción de credenciales y corrección del modelo de roles.</li>
-<li><strong>Sprint 1:</strong> roles diferenciados (operario / cooperativa / municipio / vecino) mediante custom claims asignados desde el servidor.</li>
-<li><strong>Sprint 2:</strong> persistencia offline con sincronización asíncrona, y pruebas en zonas de sombra de cobertura (OE3).</li>
-<li><strong>Sprint 3:</strong> alertas vecinales, certificados y generación automática de Actas REP en PDF (OE5).</li>
+<li>Instituto Nacional de Estadísticas (2024). Proyecciones de población comunal.</li>
+<li>MSUR (2025). <em>Pedro Aguirre Cerda y Msur: avanzando juntos hacia el 100% de cobertura del programa de reciclaje comunal</em>.</li>
+<li>Municipalidad de Pedro Aguirre Cerda. Punto Limpio comunal y programa de reciclaje; <em>Nuestra Comuna</em>.</li>
+<li>Santiago Recicla — MMA (2018). Construcción de Red de Puntos Limpios para la RMS.</li>
+<li>Biblioteca del Congreso Nacional (2024–2025). Reportes estadísticos comunales: Pedro Aguirre Cerda.</li>
 </ul>
-</section>
-<section id="decisiones-abiertas" class="level2">
-<h2 class="anchored" data-anchor-id="decisiones-abiertas">Decisiones abiertas</h2>
-<ul>
-<li>Estrategia de folios y firma de las Actas REP en PDF.</li>
-<li>Costos de Firestore a escala municipal y plan de salida (lock-in).</li>
-</ul>
-<p><em>Esta página se irá actualizando a medida que el diseño técnico se consolide.</em></p>
 
 
 </section>

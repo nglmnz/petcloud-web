@@ -42,6 +42,97 @@
     "text": "Referencias del territorio\n\nBustos Azúa, J. E. (2024). Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920. Universidad de Playa Ancha.\nMinisterio del Medio Ambiente (2023). Municipio de Viña del Mar y Seremi inician proyecto en apoyo a recicladores de base.\nPaís Circular (2026). Recicladores de base organizados: en cinco años cooperativas dan salto de 6 a 47.\nMunicipalidad de Viña del Mar (2025). Viña del Mar alcanzó un 23% de reciclaje en 2024."
   },
   {
+    "objectID": "pac.html",
+    "href": "pac.html",
+    "title": "Pedro Aguirre Cerda",
+    "section": "",
+    "text": "Propuesta de territorio piloto · Región Metropolitana"
+  },
+  {
+    "objectID": "pac.html#una-comuna-que-ya-decidió-reciclar",
+    "href": "pac.html#una-comuna-que-ya-decidió-reciclar",
+    "title": "Pedro Aguirre Cerda",
+    "section": "Una comuna que ya decidió reciclar",
+    "text": "Una comuna que ya decidió reciclar\nPedro Aguirre Cerda no parte de cero. La comuna cuenta con una red de cuatro puntos limpios, un programa de reciclaje domiciliario en expansión hacia el 100% de cobertura junto a MSUR y ReSimple, y una trayectoria institucional que va desde la certificación ambiental municipal hasta la recuperación de más de 400 toneladas de material en los primeros nueve meses de 2025. Lo que la comuna todavía no tiene — como ningún municipio de Chile — es la capa de datos que haga ese esfuerzo trazable, auditable y visible ante el nivel central.\n\n  \n    104.462\n    habitantes en 9,4 km² — una de las comunas más densas del Gran Santiago\n    Proyección INE 2024\n  \n  \n    405 ton\n    recuperadas entre enero y septiembre de 2025 (221 t envases + 184 t vidrio)\n    Programa Msur Recicla-PAC, 2025\n  \n  \n    49% → 100%\n    ampliación de cobertura del reciclaje domiciliario: 31.000 hogares, 24.000 kits\n    MSUR · ReSimple · Municipalidad de PAC, oct. 2025\n  \n  \n    44\n    campanas de vidrio administradas por el programa comunal\n    Programa Msur Recicla-PAC, 2025\n  \n  \n    4\n    puntos limpios, incluido el recinto de 400 m² de Enrique Matte con monitores permanentes\n    Municipalidad de PAC · Santiago Recicla\n  \n  \n    2,5 M ton\n    de productos agrícolas mueve al año Lo Valledor, el mayor mercado mayorista del país, dentro de la comuna\n    Municipalidad de PAC"
+  },
+  {
+    "objectID": "pac.html#el-territorio-en-el-mapa",
+    "href": "pac.html#el-territorio-en-el-mapa",
+    "title": "Pedro Aguirre Cerda",
+    "section": "El territorio en el mapa",
+    "text": "El territorio en el mapa\n\n\n  Punto limpio\n  Gran generador de residuos\n  Institución / hito territorial\n\n\nUbicaciones referenciales según información pública disponible; a validar con la Dirección de Medio Ambiente.\nLa oportunidad"
+  },
+  {
+    "objectID": "pac.html#lo-que-pac-tiene-y-lo-que-le-falta",
+    "href": "pac.html#lo-que-pac-tiene-y-lo-que-le-falta",
+    "title": "Pedro Aguirre Cerda",
+    "section": "Lo que PAC tiene y lo que le falta",
+    "text": "Lo que PAC tiene y lo que le falta\n\nTiene: infraestructura y voluntad política\nCuatro puntos limpios, un programa domiciliario en expansión al 100% de cobertura, convenio activo con un Gran Sistema de Gestión (ReSimple vía MSUR), y certificación ambiental municipal. Pedro Aguirre Cerda está entre las comunas del sur de Santiago que más ha invertido en la transición hacia la economía circular.\n\n\nTiene: escala manejable y densidad ideal para pilotar\n9,4 km² completamente urbanos, 104 mil habitantes, distancias cortas entre puntos. Es el territorio perfecto para un piloto de trazabilidad: suficientemente denso para generar datos significativos, suficientemente acotado para controlarlo en 8 semanas.\n\n\nLe falta: la capa de datos en origen\nLas 405 toneladas recuperadas en 2025 se conocen de forma agregada, al final de la cadena. Ningún actor del sistema puede responder hoy con evidencia auditable: ¿qué punto rinde más?, ¿qué ruta es más eficiente?, ¿cuántos kilos aportó cada recuperador?, ¿cómo evoluciona el cumplimiento REP semana a semana? Esa es exactamente la capa que PET CLOUD construye."
+  },
+  {
+    "objectID": "pac.html#qué-proponemos-al-municipio",
+    "href": "pac.html#qué-proponemos-al-municipio",
+    "title": "Pedro Aguirre Cerda",
+    "section": "Qué proponemos al municipio",
+    "text": "Qué proponemos al municipio\nUn piloto de 8 semanas sin costo de software, consistente en:\n\nRegistro digital de pesajes en origen en uno o dos puntos limpios de la comuna, mediante la PWA de PET CLOUD operada por el personal del punto o recicladores de base del territorio, con geolocalización y funcionamiento sin señal.\nDato inmutable desde el primer día: cada pesaje queda sellado en el backend — sin posibilidad de modificación ni borrado — construyendo un historial auditable ante el MMA y la SMA.\nDashboard para la Dirección de Medio Ambiente con el avance en tiempo real: kilos por punto, por material y por período, exportable para reportes y postulaciones a fondos (Fondo para el Reciclaje, convenios SIG).\nInforme final de resiliencia y proyección: evaluación conjunta de resultados y hoja de ruta para escalar al resto de la red comunal.\n\nEl aprendizaje del ecosistema de Viña del Mar — donde las cooperativas se cuadruplicaron en cinco años pero el dato de origen sigue sin existir — indica que la ventana de oportunidad está en instalar la trazabilidad antes de que la fiscalización REP la exija, no después."
+  },
+  {
+    "objectID": "pac.html#fuentes",
+    "href": "pac.html#fuentes",
+    "title": "Pedro Aguirre Cerda",
+    "section": "Fuentes",
+    "text": "Fuentes\n\nInstituto Nacional de Estadísticas (2024). Proyecciones de población comunal.\nMSUR (2025). Pedro Aguirre Cerda y Msur: avanzando juntos hacia el 100% de cobertura del programa de reciclaje comunal.\nMunicipalidad de Pedro Aguirre Cerda. Punto Limpio comunal y programa de reciclaje; Nuestra Comuna.\nSantiago Recicla — MMA (2018). Construcción de Red de Puntos Limpios para la RMS.\nBiblioteca del Congreso Nacional (2024–2025). Reportes estadísticos comunales: Pedro Aguirre Cerda."
+  },
+  {
+    "objectID": "colaboracion.html",
+    "href": "colaboracion.html",
+    "title": "Colaboración",
+    "section": "",
+    "text": "El proyecto está en fase inicial de MVP y busca activamente:"
+  },
+  {
+    "objectID": "colaboracion.html#equipo",
+    "href": "colaboracion.html#equipo",
+    "title": "Colaboración",
+    "section": "Equipo",
+    "text": "Equipo\n\nEmilio Bustos Azúa — Sociólogo, Universidad de Playa Ancha.\n\n\nÁngel Muñoz — Licenciado en Sociología, Universidad Alberto Hurtado."
+  },
+  {
+    "objectID": "colaboracion.html#contacto",
+    "href": "colaboracion.html#contacto",
+    "title": "Colaboración",
+    "section": "Contacto",
+    "text": "Contacto\n✉ anmunozr@alumnos.uahurtado.cl"
+  },
+  {
+    "objectID": "arquitectura.html#componentes",
+    "href": "arquitectura.html#componentes",
+    "title": "Arquitectura",
+    "section": "Componentes",
+    "text": "Componentes\n\nPWA de registro (frontend operario). Usabilidad simplificada para pesaje en ruta: peso, material, foto opcional, geolocalización automática. Persistencia local (IndexedDB) con sincronización asíncrona al recuperar señal.\n\n\nMotor de datos (Firebase / Firestore). NoSQL asíncrono en la nube. La inmutabilidad no es una promesa de interfaz: es una regla de servidor (allow update, delete: if false) sobre la colección de pesajes.\n\n\nDashboard de gobernanza (frontend municipal). Visualización del cumplimiento de metas REP, mapa de puntos con estados Recolectado / Pendiente, y exportación de reportes."
+  },
+  {
+    "objectID": "arquitectura.html#estado-de-implementación",
+    "href": "arquitectura.html#estado-de-implementación",
+    "title": "Arquitectura",
+    "section": "Estado de implementación",
+    "text": "Estado de implementación\nLa inmutabilidad de los pesajes ya está implementada como regla de servidor, junto con autenticación, validación de datos en frontera (rangos de peso, identidad del registrador) y auditoría de origen por usuario."
+  },
+  {
+    "objectID": "arquitectura.html#ruta-de-consolidación",
+    "href": "arquitectura.html#ruta-de-consolidación",
+    "title": "Arquitectura",
+    "section": "Ruta de consolidación",
+    "text": "Ruta de consolidación\n\nSprint 0: endurecimiento de seguridad — restricción de credenciales y corrección del modelo de roles.\nSprint 1: roles diferenciados (operario / cooperativa / municipio / vecino) mediante custom claims asignados desde el servidor.\nSprint 2: persistencia offline con sincronización asíncrona, y pruebas en zonas de sombra de cobertura (OE3).\nSprint 3: alertas vecinales, certificados y generación automática de Actas REP en PDF (OE5)."
+  },
+  {
+    "objectID": "arquitectura.html#decisiones-abiertas",
+    "href": "arquitectura.html#decisiones-abiertas",
+    "title": "Arquitectura",
+    "section": "Decisiones abiertas",
+    "text": "Decisiones abiertas\n\nEstrategia de folios y firma de las Actas REP en PDF.\nCostos de Firestore a escala municipal y plan de salida (lock-in).\n\nEsta página se irá actualizando a medida que el diseño técnico se consolide."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
@@ -82,55 +173,6 @@
     "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
     "section": "¿Tu comuna quiere datos de reciclaje que resistan cualquier auditoría?",
     "text": "¿Tu comuna quiere datos de reciclaje que resistan cualquier auditoría?\nConversemos. El piloto está diseñado para partir en la Región de Valparaíso, pero el modelo escala a cualquier gobierno local de Chile.\nEscríbenos"
-  },
-  {
-    "objectID": "arquitectura.html#componentes",
-    "href": "arquitectura.html#componentes",
-    "title": "Arquitectura",
-    "section": "Componentes",
-    "text": "Componentes\n\nPWA de registro (frontend operario). Usabilidad simplificada para pesaje en ruta: peso, material, foto opcional, geolocalización automática. Persistencia local (IndexedDB) con sincronización asíncrona al recuperar señal.\n\n\nMotor de datos (Firebase / Firestore). NoSQL asíncrono en la nube. La inmutabilidad no es una promesa de interfaz: es una regla de servidor (allow update, delete: if false) sobre la colección de pesajes.\n\n\nDashboard de gobernanza (frontend municipal). Visualización del cumplimiento de metas REP, mapa de puntos con estados Recolectado / Pendiente, y exportación de reportes."
-  },
-  {
-    "objectID": "arquitectura.html#estado-de-implementación",
-    "href": "arquitectura.html#estado-de-implementación",
-    "title": "Arquitectura",
-    "section": "Estado de implementación",
-    "text": "Estado de implementación\nLa inmutabilidad de los pesajes ya está implementada como regla de servidor, junto con autenticación, validación de datos en frontera (rangos de peso, identidad del registrador) y auditoría de origen por usuario."
-  },
-  {
-    "objectID": "arquitectura.html#ruta-de-consolidación",
-    "href": "arquitectura.html#ruta-de-consolidación",
-    "title": "Arquitectura",
-    "section": "Ruta de consolidación",
-    "text": "Ruta de consolidación\n\nSprint 0: endurecimiento de seguridad — restricción de credenciales y corrección del modelo de roles.\nSprint 1: roles diferenciados (operario / cooperativa / municipio / vecino) mediante custom claims asignados desde el servidor.\nSprint 2: persistencia offline con sincronización asíncrona, y pruebas en zonas de sombra de cobertura (OE3).\nSprint 3: alertas vecinales, certificados y generación automática de Actas REP en PDF (OE5)."
-  },
-  {
-    "objectID": "arquitectura.html#decisiones-abiertas",
-    "href": "arquitectura.html#decisiones-abiertas",
-    "title": "Arquitectura",
-    "section": "Decisiones abiertas",
-    "text": "Decisiones abiertas\n\nEstrategia de folios y firma de las Actas REP en PDF.\nCostos de Firestore a escala municipal y plan de salida (lock-in).\n\nEsta página se irá actualizando a medida que el diseño técnico se consolide."
-  },
-  {
-    "objectID": "colaboracion.html",
-    "href": "colaboracion.html",
-    "title": "Colaboración",
-    "section": "",
-    "text": "El proyecto está en fase inicial de MVP y busca activamente:"
-  },
-  {
-    "objectID": "colaboracion.html#equipo",
-    "href": "colaboracion.html#equipo",
-    "title": "Colaboración",
-    "section": "Equipo",
-    "text": "Equipo\n\nEmilio Bustos Azúa — Sociólogo, Universidad de Playa Ancha.\n\n\nÁngel Muñoz — Licenciado en Sociología, Universidad Alberto Hurtado."
-  },
-  {
-    "objectID": "colaboracion.html#contacto",
-    "href": "colaboracion.html#contacto",
-    "title": "Colaboración",
-    "section": "Contacto",
-    "text": "Contacto\n✉ anmunozr@alumnos.uahurtado.cl"
   },
   {
     "objectID": "proyecto.html",
