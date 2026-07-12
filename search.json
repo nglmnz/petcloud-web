@@ -70,20 +70,6 @@
     "text": "Contacto\n✉ anmunozr@alumnos.uahurtado.cl"
   },
   {
-    "objectID": "arquitectura.html",
-    "href": "arquitectura.html",
-    "title": "Arquitectura",
-    "section": "",
-    "text": "flowchart LR\n  A[Recicladora en ruta&lt;br/&gt;PWA · offline-first] --&gt;|pesaje + GPS| B[(Firestore&lt;br/&gt;reglas: no update / no delete)]\n  B --&gt; C[Dashboard DIMAO&lt;br/&gt;metas Ley REP en tiempo real]\n  B --&gt; D[Generador de Actas REP&lt;br/&gt;PDF con folio]\n  D --&gt; E[SINADER&lt;br/&gt;interoperabilidad proyectada]"
-  },
-  {
-    "objectID": "arquitectura.html#visión-general",
-    "href": "arquitectura.html#visión-general",
-    "title": "Arquitectura",
-    "section": "",
-    "text": "flowchart LR\n  A[Recicladora en ruta&lt;br/&gt;PWA · offline-first] --&gt;|pesaje + GPS| B[(Firestore&lt;br/&gt;reglas: no update / no delete)]\n  B --&gt; C[Dashboard DIMAO&lt;br/&gt;metas Ley REP en tiempo real]\n  B --&gt; D[Generador de Actas REP&lt;br/&gt;PDF con folio]\n  D --&gt; E[SINADER&lt;br/&gt;interoperabilidad proyectada]"
-  },
-  {
     "objectID": "arquitectura.html#componentes",
     "href": "arquitectura.html#componentes",
     "title": "Arquitectura",

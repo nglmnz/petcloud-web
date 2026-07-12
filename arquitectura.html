@@ -66,9 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -162,22 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="visión-general" class="level2">
 <h2 class="anchored" data-anchor-id="visión-general">Visión general</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[Recicladora en ruta&lt;br/&gt;PWA · offline-first] --&gt;|pesaje + GPS| B[(Firestore&lt;br/&gt;reglas: no update / no delete)]
-  B --&gt; C[Dashboard DIMAO&lt;br/&gt;metas Ley REP en tiempo real]
-  B --&gt; D[Generador de Actas REP&lt;br/&gt;PDF con folio]
-  D --&gt; E[SINADER&lt;br/&gt;interoperabilidad proyectada]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<iframe src="flujo.html" width="100%" height="420" style="border:none;border-radius:14px;"></iframe>
 </section>
 <section id="componentes" class="level2">
 <h2 class="anchored" data-anchor-id="componentes">Componentes</h2>
