@@ -1,0 +1,142 @@
+---
+title: "Pedro Aguirre Cerda"
+subtitle: "Caracterización territorial para un piloto de trazabilidad REP"
+---
+
+```{=html}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mapa-territorio{ height:420px; border-radius:14px; border:1px solid rgba(14,59,67,.15); margin:1rem 0 0.5rem; }
+  .leyenda-mapa{ display:flex; gap:14px; flex-wrap:wrap; font-size:.78rem; margin-bottom:1.4rem; }
+  .leyenda-mapa span{ display:flex; align-items:center; gap:6px; }
+  .dot-ley{ width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+  .leaflet-popup-content b{ color:#0E3B43; }
+  .leaflet-popup-content .pill{ display:inline-block; font-size:.65rem; font-weight:700; padding:2px 8px; border-radius:999px; margin-top:4px; }
+  .pill-op{ background:rgba(46,125,50,.13); color:#2E7D32; }
+  .pill-gen{ background:rgba(224,122,47,.15); color:#E07A2F; }
+  .pill-inst{ background:rgba(14,59,67,.1); color:#0E3B43; }
+  .stat-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:1.4rem 0 2rem; }
+  .stat{ background:#0E3B43; color:#F5FBFA; border-radius:12px; padding:16px; }
+  .stat .n{ font-size:1.5rem; font-weight:800; color:#6FCFC3; font-variant-numeric:tabular-nums; }
+  .stat .l{ font-size:.75rem; opacity:.8; margin-top:2px; }
+  .stat .f{ font-size:.65rem; opacity:.5; margin-top:6px; }
+  .oportunidad{ background:#fff; border:1px solid rgba(14,59,67,.1); border-left:4px solid #6FCFC3; border-radius:10px; padding:14px 18px; margin-bottom:10px; }
+  .oportunidad h4{ font-size:.92rem; color:#0E3B43; margin:0 0 5px; }
+  .oportunidad p{ font-size:.84rem; opacity:.82; margin:0; }
+</style>
+```
+
+[Propuesta de territorio piloto · Región Metropolitana]{.sec-label}
+
+## Una comuna que ya decidió reciclar
+
+Pedro Aguirre Cerda no parte de cero. La comuna cuenta con una red de cuatro puntos limpios, un programa de reciclaje domiciliario en expansión hacia el 100% de cobertura junto a MSUR y ReSimple, y una trayectoria institucional que va desde la certificación ambiental municipal hasta la recuperación de más de 400 toneladas de material en los primeros nueve meses de 2025. Lo que la comuna todavía no tiene — como ningún municipio de Chile — es la capa de datos que haga ese esfuerzo trazable, auditable y visible ante el nivel central.
+
+```{=html}
+<div class="stat-grid">
+  <div class="stat">
+    <div class="n">104.462</div>
+    <div class="l">habitantes en 9,4 km² — una de las comunas más densas del Gran Santiago</div>
+    <div class="f">Proyección INE 2024</div>
+  </div>
+  <div class="stat">
+    <div class="n">405 ton</div>
+    <div class="l">recuperadas entre enero y septiembre de 2025 (221 t envases + 184 t vidrio)</div>
+    <div class="f">Programa Msur Recicla-PAC, 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">49% → 100%</div>
+    <div class="l">ampliación de cobertura del reciclaje domiciliario: 31.000 hogares, 24.000 kits</div>
+    <div class="f">MSUR · ReSimple · Municipalidad de PAC, oct. 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">44</div>
+    <div class="l">campanas de vidrio administradas por el programa comunal</div>
+    <div class="f">Programa Msur Recicla-PAC, 2025</div>
+  </div>
+  <div class="stat">
+    <div class="n">4</div>
+    <div class="l">puntos limpios, incluido el recinto de 400 m² de Enrique Matte con monitores permanentes</div>
+    <div class="f">Municipalidad de PAC · Santiago Recicla</div>
+  </div>
+  <div class="stat">
+    <div class="n">2,5 M ton</div>
+    <div class="l">de productos agrícolas mueve al año Lo Valledor, el mayor mercado mayorista del país, dentro de la comuna</div>
+    <div class="f">Municipalidad de PAC</div>
+  </div>
+</div>
+```
+
+## El territorio en el mapa
+
+```{=html}
+<div id="mapa-pac" class="mapa-territorio"></div>
+<div class="leyenda-mapa">
+  <span><span class="dot-ley" style="background:#2E7D32"></span>Punto limpio</span>
+  <span><span class="dot-ley" style="background:#E07A2F"></span>Gran generador de residuos</span>
+  <span><span class="dot-ley" style="background:#0E3B43"></span>Institución / hito territorial</span>
+</div>
+<script>
+(function(){
+  var map = L.map('mapa-pac').setView([-33.484, -70.678], 14);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'© <a href="https://openstreetmap.org">OpenStreetMap</a>',maxZoom:18
+  }).addTo(map);
+  function mk(color){ return L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)"></div>',iconAnchor:[7,7]}); }
+  var puntos = [
+    { ll:[-33.4765,-70.6710], color:'#2E7D32', desc:'<b>Punto Limpio Enrique Matte</b><br>Enrique Matte 2280 · 400 m²<br>Monitores permanentes · L–J 9:00–16:30, V 9–14, S 10–18<br>Papel, cartón, PET, HDPE, aluminio, vidrio<br>Financiado por Santiago Recicla (GORE–Subdere)<br><span class="pill pill-op">Punto limpio principal</span>' },
+    { ll:[-33.4818,-70.6745], color:'#2E7D32', desc:'<b>Punto Limpio Municipalidad</b><br>Av. Salesianos 2029 · 24 horas<br>Papel, cartón, tetrapack, aluminio, PET, vidrio<br><span class="pill pill-op">Punto limpio</span>' },
+    { ll:[-33.4890,-70.6740], color:'#2E7D32', desc:'<b>Punto Limpio Estadio Municipal</b><br>La Marina 2256–2498 · 24 horas<br><span class="pill pill-op">Punto limpio</span>' },
+    { ll:[-33.4870,-70.6650], color:'#2E7D32', desc:'<b>Punto Limpio Liceo Eugenio Pereira Salas</b><br>24 horas · Papel, cartón, tetrapack, aluminio, PET, vidrio<br><span class="pill pill-op">Punto limpio</span>' },
+    { ll:[-33.4780,-70.6940], color:'#E07A2F', desc:'<b>Lo Valledor</b><br>Mayor mercado hortofrutícola mayorista de Chile<br>2,5 millones ton/año · 33 ha · 30 mil visitas diarias<br>Gran generador de residuos orgánicos y de embalaje<br><span class="pill pill-gen">Gran generador</span>' },
+    { ll:[-33.4870,-70.6860], color:'#0E3B43', desc:'<b>Parque André Jarlán</b><br>11 hectáreas construidas sobre un antiguo vertedero de residuos domiciliarios<br>El principal pulmón verde comunal es también la memoria territorial del problema<br><span class="pill pill-inst">Hito territorial</span>' },
+    { ll:[-33.4830,-70.6770], color:'#0E3B43', desc:'<b>Municipalidad de Pedro Aguirre Cerda</b><br>Dirección de Medio Ambiente<br>Contraparte del programa Msur Recicla-PAC<br><span class="pill pill-inst">Contraparte institucional</span>' },
+  ];
+  puntos.forEach(function(p){
+    L.marker(p.ll, {icon: mk(p.color)}).addTo(map)
+      .bindPopup('<div style="font-size:.82rem;max-width:230px;line-height:1.45">'+p.desc+'</div>');
+  });
+})();
+</script>
+```
+
+*Ubicaciones referenciales según información pública disponible; a validar con la Dirección de Medio Ambiente.*
+
+[La oportunidad]{.sec-label}
+
+## Lo que PAC tiene y lo que le falta
+
+::: {.oportunidad}
+#### Tiene: infraestructura y voluntad política
+Cuatro puntos limpios, un programa domiciliario en expansión al 100% de cobertura, convenio activo con un Gran Sistema de Gestión (ReSimple vía MSUR), y certificación ambiental municipal. Pedro Aguirre Cerda está entre las comunas del sur de Santiago que más ha invertido en la transición hacia la economía circular.
+:::
+
+::: {.oportunidad}
+#### Tiene: escala manejable y densidad ideal para pilotar
+9,4 km² completamente urbanos, 104 mil habitantes, distancias cortas entre puntos. Es el territorio perfecto para un piloto de trazabilidad: suficientemente denso para generar datos significativos, suficientemente acotado para controlarlo en 8 semanas.
+:::
+
+::: {.oportunidad}
+#### Le falta: la capa de datos en origen
+Las 405 toneladas recuperadas en 2025 se conocen de forma agregada, al final de la cadena. Ningún actor del sistema puede responder hoy con evidencia auditable: ¿qué punto rinde más?, ¿qué ruta es más eficiente?, ¿cuántos kilos aportó cada recuperador?, ¿cómo evoluciona el cumplimiento REP semana a semana? Esa es exactamente la capa que PET CLOUD construye.
+:::
+
+## Qué proponemos al municipio
+
+Un **piloto de 8 semanas sin costo de software**, consistente en:
+
+1. **Registro digital de pesajes en origen** en uno o dos puntos limpios de la comuna, mediante la PWA de PET CLOUD operada por el personal del punto o recicladores de base del territorio, con geolocalización y funcionamiento sin señal.
+2. **Dato inmutable desde el primer día**: cada pesaje queda sellado en el backend — sin posibilidad de modificación ni borrado — construyendo un historial auditable ante el MMA y la SMA.
+3. **Dashboard para la Dirección de Medio Ambiente** con el avance en tiempo real: kilos por punto, por material y por período, exportable para reportes y postulaciones a fondos (Fondo para el Reciclaje, convenios SIG).
+4. **Informe final de resiliencia y proyección**: evaluación conjunta de resultados y hoja de ruta para escalar al resto de la red comunal.
+
+El aprendizaje del ecosistema de Viña del Mar — donde las cooperativas se cuadruplicaron en cinco años pero el dato de origen sigue sin existir — indica que la ventana de oportunidad está en instalar la trazabilidad *antes* de que la fiscalización REP la exija, no después.
+
+## Fuentes
+
+- Instituto Nacional de Estadísticas (2024). Proyecciones de población comunal.
+- MSUR (2025). *Pedro Aguirre Cerda y Msur: avanzando juntos hacia el 100% de cobertura del programa de reciclaje comunal*.
+- Municipalidad de Pedro Aguirre Cerda. Punto Limpio comunal y programa de reciclaje; *Nuestra Comuna*.
+- Santiago Recicla — MMA (2018). Construcción de Red de Puntos Limpios para la RMS.
+- Biblioteca del Congreso Nacional (2024–2025). Reportes estadísticos comunales: Pedro Aguirre Cerda.

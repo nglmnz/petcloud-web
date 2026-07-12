@@ -18,7 +18,9 @@ website:
       - href: arquitectura.qmd
         text: Arquitectura
       - href: vina.qmd
-        text: "Caso Viña del Mar"
+        text: "Viña del Mar"
+      - href: pac.qmd
+        text: "Pedro Aguirre Cerda"
       - href: colaboracion.qmd
         text: Colaboración
     right:
