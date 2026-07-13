@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/TU-USUARIO/petcloud"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/nglmnz/petcloud"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -177,16 +177,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="equipo" class="level2">
 <h2 class="anchored" data-anchor-id="equipo">Equipo</h2>
-<div class="bloque">
-<p><strong>Emilio Bustos Azúa</strong> — Sociólogo, Universidad de Playa Ancha.</p>
+<div>
+
 </div>
-<div class="bloque">
-<p><strong>Ángel Muñoz</strong> — Licenciado en Sociología, Universidad Alberto Hurtado.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="persona quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="avatar">AM</span> <strong>Ángel Muñoz</strong><br>
+Sociólogo · Universidad Alberto Hurtado</p>
+</div>
+<div class="persona quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="avatar">EB</span> <strong>Emilio Bustos Azúa</strong><br>
+Sociólogo · Universidad de Playa Ancha</p>
+</div>
+</div>
 </div>
 </section>
 <section id="contacto" class="level2">
 <h2 class="anchored" data-anchor-id="contacto">Contacto</h2>
-<p>✉ <a href="mailto:anmunozr@alumnos.uahurtado.cl?subject=Colaboración%20PET%20CLOUD&amp;body=Hola%20Ángel%2C%0A%0AMe%20interesa%20conocer%20más%20sobre%20PET%20CLOUD%20y%20explorar%20posibilidades%20de%20colaboración.%0A%0A">anmunozr@alumnos.uahurtado.cl</a></p>
+<p>✉ <a href="mailto:anmunozr@alumnos.uahurtado.cl?subject=Colaboración%20PET%20CLOUD&amp;body=Hola%20Ángel%2C%0A%0AMe%20interesa%20conocer%20más%20sobre%20PET%20CLOUD%20y%20explorar%20posibilidades%20de%20colaboración.%0A%0A">Envíanos un correo</a></p>
 
 
 </section>
@@ -284,7 +293,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/TU-USUARIO\.github\.io\/petcloud");
+      var filterRegex = new RegExp("https:\/\/nglmnz\.github\.io\/petcloud");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

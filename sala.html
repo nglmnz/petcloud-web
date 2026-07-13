@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pedro Aguirre Cerda – PET CLOUD</title>
+<title>Sala de trabajo – PET CLOUD</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Viña del Mar</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./pac.html" aria-current="page"> 
+    <a class="nav-link" href="./pac.html"> 
 <span class="menu-text">Pedro Aguirre Cerda</span></a>
   </li>  
   <li class="nav-item">
@@ -134,12 +134,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#una-comuna-que-ya-decidió-reciclar" id="toc-una-comuna-que-ya-decidió-reciclar" class="nav-link active" data-scroll-target="#una-comuna-que-ya-decidió-reciclar">Una comuna que ya decidió reciclar</a></li>
-  <li><a href="#el-territorio-en-el-mapa" id="toc-el-territorio-en-el-mapa" class="nav-link" data-scroll-target="#el-territorio-en-el-mapa">El territorio en el mapa</a></li>
-  <li><a href="#lo-que-pac-tiene-y-lo-que-le-falta" id="toc-lo-que-pac-tiene-y-lo-que-le-falta" class="nav-link" data-scroll-target="#lo-que-pac-tiene-y-lo-que-le-falta">Lo que PAC tiene y lo que le falta</a></li>
-  <li><a href="#el-enfoque-de-género-como-dimensión-de-diseño" id="toc-el-enfoque-de-género-como-dimensión-de-diseño" class="nav-link" data-scroll-target="#el-enfoque-de-género-como-dimensión-de-diseño">El enfoque de género como dimensión de diseño</a></li>
-  <li><a href="#qué-proponemos-al-municipio" id="toc-qué-proponemos-al-municipio" class="nav-link" data-scroll-target="#qué-proponemos-al-municipio">Qué proponemos al municipio</a></li>
-  <li><a href="#fuentes" id="toc-fuentes" class="nav-link" data-scroll-target="#fuentes">Fuentes</a></li>
+  <li><a href="#caja-de-herramientas" id="toc-caja-de-herramientas" class="nav-link active" data-scroll-target="#caja-de-herramientas">Caja de herramientas</a></li>
+  <li><a href="#bitácora-de-investigación" id="toc-bitácora-de-investigación" class="nav-link" data-scroll-target="#bitácora-de-investigación">Bitácora de investigación</a></li>
+  <li><a href="#líneas-de-publicación-posibles" id="toc-líneas-de-publicación-posibles" class="nav-link" data-scroll-target="#líneas-de-publicación-posibles">Líneas de publicación posibles</a></li>
   </ul>
 </nav>
     </div>
@@ -148,8 +145,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pedro Aguirre Cerda</h1>
-<p class="subtitle lead">Caracterización territorial para un piloto de trazabilidad REP</p>
+<h1 class="title">Sala de trabajo</h1>
+<p class="subtitle lead">Espacio interno del equipo · Ángel Muñoz + Emilio Bustos</p>
 </div>
 
 
@@ -166,146 +163,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<meta name="robots" content="noindex, nofollow">
 <style>
-  .mapa-territorio{ height:420px; border-radius:14px; border:1px solid rgba(14,59,67,.15); margin:1rem 0 0.5rem; }
-  .leyenda-mapa{ display:flex; gap:14px; flex-wrap:wrap; font-size:.78rem; margin-bottom:1.4rem; }
-  .leyenda-mapa span{ display:flex; align-items:center; gap:6px; }
-  .dot-ley{ width:12px; height:12px; border-radius:50%; flex-shrink:0; }
-  .leaflet-popup-content b{ color:#0E3B43; }
-  .leaflet-popup-content .pill{ display:inline-block; font-size:.65rem; font-weight:700; padding:2px 8px; border-radius:999px; margin-top:4px; }
-  .pill-op{ background:rgba(46,125,50,.13); color:#2E7D32; }
-  .pill-gen{ background:rgba(224,122,47,.15); color:#E07A2F; }
-  .pill-inst{ background:rgba(14,59,67,.1); color:#0E3B43; }
-  .stat-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:1.4rem 0 2rem; }
-  .stat{ background:#0E3B43; color:#F5FBFA; border-radius:12px; padding:16px; }
-  .stat .n{ font-size:1.5rem; font-weight:800; color:#6FCFC3; font-variant-numeric:tabular-nums; }
-  .stat .l{ font-size:.75rem; opacity:.8; margin-top:2px; }
-  .stat .f{ font-size:.65rem; opacity:.5; margin-top:6px; }
-  .oportunidad{ background:#fff; border:1px solid rgba(14,59,67,.1); border-left:4px solid #6FCFC3; border-radius:10px; padding:14px 18px; margin-bottom:10px; }
-  .oportunidad h4{ font-size:.92rem; color:#0E3B43; margin:0 0 5px; }
-  .oportunidad p{ font-size:.84rem; opacity:.82; margin:0; }
+  .aviso{background:rgba(224,122,47,.1);border:1px solid rgba(224,122,47,.35);border-radius:10px;padding:12px 16px;font-size:.82rem;margin-bottom:1.5rem}
+  .herr{background:#fff;border:1px solid rgba(14,59,67,.12);border-left:4px solid #6FCFC3;border-radius:12px;padding:14px 18px;margin-bottom:12px}
+  .herr h4{margin:0 0 4px;font-size:.95rem;color:#0E3B43}
+  .herr p{font-size:.83rem;opacity:.85;margin:0}
+  .paper{background:rgba(14,59,67,.04);border-radius:10px;padding:12px 16px;margin-bottom:10px;font-size:.85rem}
+  .paper b{color:#0E3B43}
 </style>
-<p><span class="sec-label">Propuesta de territorio piloto · Región Metropolitana</span></p>
-<section id="una-comuna-que-ya-decidió-reciclar" class="level2">
-<h2 class="anchored" data-anchor-id="una-comuna-que-ya-decidió-reciclar">Una comuna que ya decidió reciclar</h2>
-<p>Pedro Aguirre Cerda no parte de cero. La comuna cuenta con una red de cuatro puntos limpios, un programa de reciclaje domiciliario en expansión hacia el 100% de cobertura junto a MSUR y ReSimple, y una trayectoria institucional que va desde la certificación ambiental municipal hasta la recuperación de más de 400 toneladas de material en los primeros nueve meses de 2025. Lo que la comuna todavía no tiene — como ningún municipio de Chile — es la capa de datos que haga ese esfuerzo trazable, auditable y visible ante el nivel central.</p>
-<div class="stat-grid">
-  <div class="stat">
-    <div class="n">104.462</div>
-    <div class="l">habitantes en 9,4 km² — una de las comunas más densas del Gran Santiago</div>
-    <div class="f">Proyección INE 2024</div>
-  </div>
-  <div class="stat">
-    <div class="n">405 ton</div>
-    <div class="l">recuperadas entre enero y septiembre de 2025 (221 t envases + 184 t vidrio)</div>
-    <div class="f">Programa Msur Recicla-PAC, 2025</div>
-  </div>
-  <div class="stat">
-    <div class="n">49% → 100%</div>
-    <div class="l">ampliación de cobertura del reciclaje domiciliario: 31.000 hogares, 24.000 kits</div>
-    <div class="f">MSUR · ReSimple · Municipalidad de PAC, oct. 2025</div>
-  </div>
-  <div class="stat">
-    <div class="n">44</div>
-    <div class="l">campanas de vidrio administradas por el programa comunal</div>
-    <div class="f">Programa Msur Recicla-PAC, 2025</div>
-  </div>
-  <div class="stat">
-    <div class="n">4</div>
-    <div class="l">puntos limpios, incluido el recinto de 400 m² de Enrique Matte con monitores permanentes</div>
-    <div class="f">Municipalidad de PAC · Santiago Recicla</div>
-  </div>
-  <div class="stat">
-    <div class="n">2,5 M ton</div>
-    <div class="l">de productos agrícolas mueve al año Lo Valledor, el mayor mercado mayorista del país, dentro de la comuna</div>
-    <div class="f">Municipalidad de PAC</div>
-  </div>
+<div class="aviso">
+<p><strong>Página no listada.</strong> Esta URL no aparece en el menú ni en buscadores, pero técnicamente es pública (GitHub Pages no permite autenticación). No publicar aquí datos de entrevistas, información personal ni credenciales. Para material sensible: Drive compartido. Autenticación real con Firebase: pendiente como sprint futuro.</p>
 </div>
+<section id="caja-de-herramientas" class="level2">
+<h2 class="anchored" data-anchor-id="caja-de-herramientas">Caja de herramientas</h2>
+<section id="radar-rep-monitor-de-prensa-con-ia" class="level4 herr">
+<h4 class="anchored" data-anchor-id="radar-rep-monitor-de-prensa-con-ia">📡 Radar REP — monitor de prensa con IA</h4>
+<p>Vive en Claude (la IA gratuita solo funciona ahí, no en esta web). Cada uno puede ejecutarlo desde su cuenta: abrir el artifact “radar-rep” en la conversación de PET CLOUD, seleccionar frentes y escanear. Clasifica hallazgos en alertas / oportunidades / contexto y sugiere caminos de acción. Frecuencia sugerida: lunes, 10 minutos, alternando responsable semana por medio.</p>
 </section>
-<section id="el-territorio-en-el-mapa" class="level2">
-<h2 class="anchored" data-anchor-id="el-territorio-en-el-mapa">El territorio en el mapa</h2>
-<div id="mapa-pac" class="mapa-territorio"></div>
-<div class="leyenda-mapa">
-  <span><span class="dot-ley" style="background:#2E7D32"></span>Punto limpio</span>
-  <span><span class="dot-ley" style="background:#E07A2F"></span>Gran generador de residuos</span>
-  <span><span class="dot-ley" style="background:#0E3B43"></span>Institución / hito territorial</span>
-</div>
-<script>
-(function(){
-  var map = L.map('mapa-pac').setView([-33.487, -70.674], 14);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    attribution:'© <a href="https://openstreetmap.org">OpenStreetMap</a>',maxZoom:18
-  }).addTo(map);
-  function mk(color){ return L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)"></div>',iconAnchor:[7,7]}); }
-  var puntos = [
-    { ll:[-33.48162,-70.66782], color:'#2E7D32', desc:'<b>Punto Limpio Enrique Matte</b><br>Enrique Matte 2280 · 400 m²<br>Monitores permanentes · L–J 9:00–16:30, V 9–14, S 10–18<br>Papel, cartón, PET, HDPE, aluminio, vidrio<br>Financiado por Santiago Recicla (GORE–Subdere)<br><span class="pill pill-op">Punto limpio principal</span>' },
-    { ll:[-33.48877,-70.66416], color:'#2E7D32', desc:'<b>Punto Limpio frontis Municipalidad</b><br>Pdte. Salvador Allende 2029 · 24 horas<br>Papel, cartón, tetrapack, aluminio, PET, vidrio<br><span class="pill pill-op">Punto limpio</span>' },
-    { ll:[-33.49289,-70.67068], color:'#2E7D32', desc:'<b>Punto Limpio Estadio Municipal</b><br>Av. La Marina 2256–2498 · 24 horas<br><span class="pill pill-op">Punto limpio</span>' },
-    { ll:[-33.49449,-70.68372], color:'#2E7D32', desc:'<b>Punto Limpio Liceo Eugenio Pereira Salas</b><br>24 horas · Papel, cartón, tetrapack, aluminio, PET, vidrio<br><span class="pill pill-op">Punto limpio</span>' },
-    { ll:[-33.48225,-70.68579], color:'#E07A2F', desc:'<b>Lo Valledor</b><br>Av. Maipú 3301<br>Mayor mercado hortofrutícola mayorista de Chile<br>2,5 millones ton/año · 33 ha · 30 mil visitas diarias<br>Gran generador de residuos orgánicos y de embalaje<br><span class="pill pill-gen">Gran generador</span>' },
-    { ll:[-33.48481,-70.66988], color:'#0E3B43', desc:'<b>Parque André Jarlán</b><br>Av. Salesianos 2701<br>11 hectáreas construidas sobre un antiguo vertedero de residuos domiciliarios<br>El principal pulmón verde comunal es también la memoria territorial del problema<br><span class="pill pill-inst">Hito territorial</span>' },
-    { ll:[-33.48890,-70.66430], color:'#0E3B43', desc:'<b>Municipalidad de Pedro Aguirre Cerda</b><br>Dirección de Medio Ambiente<br>Contraparte del programa Msur Recicla-PAC<br><span class="pill pill-inst">Contraparte institucional</span>' },
-  ];
-  puntos.forEach(function(p){
-    L.marker(p.ll, {icon: mk(p.color)}).addTo(map)
-      .bindPopup('<div style="font-size:.82rem;max-width:230px;line-height:1.45">'+p.desc+'</div>');
-  });
-})();
-</script>
-<p><em>Coordenadas verificadas con Google Places (julio 2026).</em></p>
-<p><span class="sec-label">La oportunidad</span></p>
+<section id="repositorio-y-sitio" class="level4 herr">
+<h4 class="anchored" data-anchor-id="repositorio-y-sitio">🗂 Repositorio y sitio</h4>
+<p>Código del sitio: <code>github.com/nglmnz/petcloud-web</code> · Ciclo de publicación: <code>git add . &amp;&amp; git commit &amp;&amp; git push &amp;&amp; quarto publish gh-pages</code>. El código de la app (Firebase) permanece en repositorio privado hasta restringir credenciales.</p>
 </section>
-<section id="lo-que-pac-tiene-y-lo-que-le-falta" class="level2">
-<h2 class="anchored" data-anchor-id="lo-que-pac-tiene-y-lo-que-le-falta">Lo que PAC tiene y lo que le falta</h2>
-<section id="tiene-infraestructura-y-voluntad-política" class="level4 oportunidad">
-<h4 class="anchored" data-anchor-id="tiene-infraestructura-y-voluntad-política">Tiene: infraestructura y voluntad política</h4>
-<p>Cuatro puntos limpios, un programa domiciliario en expansión al 100% de cobertura, convenio activo con un Gran Sistema de Gestión (ReSimple vía MSUR), y certificación ambiental municipal. Pedro Aguirre Cerda está entre las comunas del sur de Santiago que más ha invertido en la transición hacia la economía circular.</p>
+<section id="plan-de-trabajo" class="level4 herr">
+<h4 class="anchored" data-anchor-id="plan-de-trabajo">📋 Plan de trabajo</h4>
+<p>Carta Gantt, fases, roles y horas en <code>petcloud-plan.xlsx</code> (Drive compartido). Revisión quincenal de avance contra hitos; el hito duro es la semana 6: carta de intención firmada o pivote de territorio.</p>
 </section>
-<section id="tiene-escala-manejable-y-densidad-ideal-para-pilotar" class="level4 oportunidad">
-<h4 class="anchored" data-anchor-id="tiene-escala-manejable-y-densidad-ideal-para-pilotar">Tiene: escala manejable y densidad ideal para pilotar</h4>
-<p>9,4 km² completamente urbanos, 104 mil habitantes, distancias cortas entre puntos. Es el territorio perfecto para un piloto de trazabilidad: suficientemente denso para generar datos significativos, suficientemente acotado para controlarlo en 8 semanas.</p>
+<section id="protocolo-de-investigación" class="level4 herr">
+<h4 class="anchored" data-anchor-id="protocolo-de-investigación">🔬 Protocolo de investigación</h4>
+<p>Pregunta, matriz de literatura, muestra y mapa de entidades: <a href="protocolo.html">protocolo.html</a>. Se revisa tras E2, se congela antes de E3.</p>
 </section>
-<section id="le-falta-la-capa-de-datos-en-origen" class="level4 oportunidad">
-<h4 class="anchored" data-anchor-id="le-falta-la-capa-de-datos-en-origen">Le falta: la capa de datos en origen</h4>
-<p>Las 405 toneladas recuperadas en 2025 se conocen de forma agregada, al final de la cadena. Ningún actor del sistema puede responder hoy con evidencia auditable: ¿qué punto rinde más?, ¿qué ruta es más eficiente?, ¿cuántos kilos aportó cada recuperador?, ¿cómo evoluciona el cumplimiento REP semana a semana? Esa es exactamente la capa que PET CLOUD construye.</p>
 </section>
-<p><span class="sec-label">Valor diferencial</span></p>
-</section>
-<section id="el-enfoque-de-género-como-dimensión-de-diseño" class="level2">
-<h2 class="anchored" data-anchor-id="el-enfoque-de-género-como-dimensión-de-diseño">El enfoque de género como dimensión de diseño</h2>
-<p>La evidencia nacional indica que alrededor del 60% de quienes ejercen el reciclaje de base son mujeres, y la investigación disponible sobre la implementación de la Ley REP (Bustos Azúa, 2024) documenta que sus mecanismos de formalización — certificación, registro, evidencia documentada del trabajo — operan en la práctica como barreras diferenciadas: presuponen tiempo, infraestructura y capacidad administrativa que la doble jornada de trabajo remunerado y de cuidados hace especialmente inaccesibles para las mujeres del sector.</p>
-<p>PET CLOUD traduce ese diagnóstico en diseño, no en declaración:</p>
-<ul>
-<li><strong>El registro en origen produce automáticamente la evidencia</strong> que la certificación exige, sin trámites adicionales: cada pesaje georreferenciado e inmutable es, en sí mismo, un respaldo verificable del trabajo realizado.</li>
-<li><strong>El trabajo se vuelve individualmente atribuible</strong>: el sistema registra quién recuperó qué, permitiendo que el aporte de cada recicladora deje de diluirse en cifras agregadas donde históricamente se invisibiliza.</li>
-<li><strong>El piloto puede incorporar indicadores con perspectiva de género</strong> — participación, kilos registrados y acceso a certificación desagregados por género — entregando al municipio una línea base medible para sus propios instrumentos de equidad y para postulaciones a fondos con criterios de género.</li>
-</ul>
-<p>Para una Dirección de Medio Ambiente, esto significa poder reportar no solo toneladas, sino inclusión verificable: un dato que hoy ningún municipio de Chile puede producir.</p>
-</section>
-<section id="qué-proponemos-al-municipio" class="level2">
-<h2 class="anchored" data-anchor-id="qué-proponemos-al-municipio">Qué proponemos al municipio</h2>
-<p>Un <strong>piloto de 8 semanas sin costo de software</strong>, consistente en:</p>
+<section id="bitácora-de-investigación" class="level2">
+<h2 class="anchored" data-anchor-id="bitácora-de-investigación">Bitácora de investigación</h2>
+<p><strong>Dónde vive la información:</strong> los datos NO se guardan en esta página ni en GitHub — viven en Google Drive con permisos restringidos a nuestras dos cuentas. Esta página solo los <em>enmarca</em>: el documento incrustado abajo únicamente se muestra a quien haya iniciado sesión con una cuenta Google autorizada. Cualquier otra persona que llegue a esta URL verá una pantalla de “solicitar acceso” de Google. La seguridad la pone Google, no GitHub.</p>
+<!-- INSTRUCCIONES DE ACTIVACIÓN (borrar este comentario después):
+1. Crear un Google Doc "Bitácora PET CLOUD" en el Drive compartido
+2. Compartir → Restringido → agregar solo el correo de Emilio
+3. Archivo → Compartir → Publicar NO. Usar la URL normal del doc y reemplazar
+   DOC_ID abajo por el ID que aparece en la URL del documento
+   (docs.google.com/document/d/ESTE-ES-EL-ID/edit)
+-->
+<iframe src="https://docs.google.com/document/d/DOC_ID/preview" width="100%" height="480" style="border:1px solid rgba(14,59,67,.15);border-radius:12px;">
+</iframe>
+<p style="font-size:.72rem;opacity:.55">Si ves una pantalla de acceso de Google: inicia sesión con tu cuenta autorizada. Si el recuadro dice DOC_ID, aún falta configurar el documento (instrucciones en el código de esta página).</p>
+<p>El proceso de PET CLOUD es en sí mismo un objeto de estudio. Registramos semanalmente en la bitácora cuatro tipos de entrada:</p>
 <ol type="1">
-<li><strong>Registro digital de pesajes en origen</strong> en uno o dos puntos limpios de la comuna, mediante la PWA de PET CLOUD operada por el personal del punto o recicladores de base del territorio, con geolocalización y funcionamiento sin señal.</li>
-<li><strong>Dato inmutable desde el primer día</strong>: cada pesaje queda sellado en el backend — sin posibilidad de modificación ni borrado — construyendo un historial auditable ante el MMA y la SMA.</li>
-<li><strong>Dashboard para la Dirección de Medio Ambiente</strong> con el avance en tiempo real: kilos por punto, por material y por período, exportable para reportes y postulaciones a fondos (Fondo para el Reciclaje, convenios SIG).</li>
-<li><strong>Indicadores con enfoque de género</strong> (opcional, definido junto al municipio): línea base de participación y aporte desagregado por género, con consentimiento informado de las personas participantes.</li>
-<li><strong>Informe final de resiliencia y proyección</strong>: evaluación conjunta de resultados y hoja de ruta para escalar al resto de la red comunal.</li>
+<li><strong>Decisiones técnicas y sus razones</strong> — cada elección de arquitectura (inmutabilidad, roles, offline) es una decisión sociotécnica documentable: qué alternativas se descartaron y por qué.</li>
+<li><strong>Eventos territoriales</strong> — reuniones con municipios, cooperativas y SIG: quién estuvo, qué se dijo, qué resistencias y qué traducciones ocurrieron entre el lenguaje técnico y el territorial.</li>
+<li><strong>Datos y anomalías</strong> — cuando el piloto arranque: patrones en los pesajes, usos inesperados de la herramienta, apropiaciones y rechazos por parte de las personas usuarias.</li>
+<li><strong>Reflexividad del equipo</strong> — tensiones entre el rol de investigadores y el de desarrolladores; esto es insumo directo para la discusión metodológica de cualquier paper.</li>
 </ol>
-<p>El aprendizaje del ecosistema de Viña del Mar — donde las cooperativas se cuadruplicaron en cinco años pero el dato de origen sigue sin existir — indica que la ventana de oportunidad está en instalar la trazabilidad <em>antes</em> de que la fiscalización REP la exija, no después.</p>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<ul>
-<li>Bustos Azúa, J. E. (2024). <em>Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920 (Ley REP)</em>. Trabajo de titulación, Universidad de Playa Ancha.</li>
-<li>Instituto Nacional de Estadísticas (2024). Proyecciones de población comunal.</li>
-<li>MSUR (2025). <em>Pedro Aguirre Cerda y Msur: avanzando juntos hacia el 100% de cobertura del programa de reciclaje comunal</em>.</li>
-<li>Municipalidad de Pedro Aguirre Cerda. Punto Limpio comunal y programa de reciclaje; <em>Nuestra Comuna</em>.</li>
-<li>Santiago Recicla — MMA (2018). Construcción de Red de Puntos Limpios para la RMS.</li>
-<li>Biblioteca del Congreso Nacional (2024–2025). Reportes estadísticos comunales: Pedro Aguirre Cerda.</li>
-</ul>
+<section id="líneas-de-publicación-posibles" class="level2">
+<h2 class="anchored" data-anchor-id="líneas-de-publicación-posibles">Líneas de publicación posibles</h2>
+<div class="paper">
+<p><strong>1. De la barrera al requisito: traducción de un diagnóstico de género en diseño GovTech.</strong> Cómo los hallazgos de una investigación cualitativa (Bustos Azúa, 2024) se convirtieron en requisitos de arquitectura de software. Marco: sociología de la traducción + Simondon. Revista candidata: <em>Persona y Sociedad</em> o <em>Polis</em>.</p>
+</div>
+<div class="paper">
+<p><strong>2. Trazabilidad e invisibilización: el dato como reconocimiento del trabajo de recicladoras de base.</strong> Si el piloto genera datos: análisis de cómo el registro inmutable modifica (o no) la posición de las cooperativas frente al municipio. Requiere consentimientos específicos diseñados desde el inicio del piloto.</p>
+</div>
+<div class="paper">
+<p><strong>3. Sistematización del piloto como experiencia de innovación pública desde las ciencias sociales.</strong> El proceso completo (esta bitácora) como caso de tecnología cívica desarrollada por sociólogos. Formato: sistematización de experiencias, apta para congresos (ALAS, CIIE) antes que revista.</p>
+</div>
+<p><strong>Regla ética transversal:</strong> cualquier uso de datos de personas (pesajes individualizados, entrevistas, encuestas del piloto) requiere consentimiento informado específico para publicación, diseñado <em>antes</em> de la recolección, no después. Lo conversamos con calma antes del kickoff del piloto.</p>
 
 
 </section>

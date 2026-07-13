@@ -2,44 +2,93 @@
   {
     "objectID": "vina.html",
     "href": "vina.html",
-    "title": "Caso piloto: Viña del Mar",
+    "title": "Viña del Mar",
     "section": "",
-    "text": "Territorio piloto"
+    "text": "Territorio de referencia"
   },
   {
-    "objectID": "vina.html#viña-del-mar-en-números",
-    "href": "vina.html#viña-del-mar-en-números",
-    "title": "Caso piloto: Viña del Mar",
-    "section": "Viña del Mar en números",
-    "text": "Viña del Mar en números\nLa tesis de Emilio Bustos Azúa (UPLA, 2024) sobre recicladoras de base en Valparaíso y Viña del Mar es la base empírica que ancla el piloto de PET CLOUD a este territorio. Los datos oficiales y el trabajo de campo revelan una realidad que PET CLOUD puede transformar con datos.\n\n  \n    23%\n    tasa de reciclaje comunal en 2024\n    Meta: 50% gradual · Municipalidad de Viña del Mar, 2025\n  \n  \n    +130\n    recicladores de base participaron en certificaciones REP\n    Ministerio del Medio Ambiente, 2023\n  \n  \n    60%\n    de los recicladores de base son mujeres\n    ANARCH · Gonzalez, 2020\n  \n  \n    4\n    cooperativas activas en Viña del Mar en 2026\n    Hace 5 años solo había 1 · País Circular, 2026"
+    "objectID": "vina.html#por-qué-viña-del-mar",
+    "href": "vina.html#por-qué-viña-del-mar",
+    "title": "Viña del Mar",
+    "section": "¿Por qué Viña del Mar?",
+    "text": "¿Por qué Viña del Mar?\nViña del Mar condensa, en una sola comuna, la tensión central de la Ley REP en Chile: un ecosistema de reciclaje en plena expansión organizativa que sigue operando sobre una infraestructura de información inexistente. La comuna cuadruplicó sus cooperativas de recicladores en cinco años y elevó su tasa de reciclaje del 1% histórico al 23%, con una meta declarada del 50%. Ese crecimiento, sin embargo, no está acompañado de un sistema que registre, certifique y haga visible el flujo de material que lo sostiene.\n\n  \n    23%\n    tasa de reciclaje comunal en 2024, con meta del 50%\n    Municipalidad de Viña del Mar, 2025\n  \n  \n    1 → 4\n    cooperativas de recicladores activas en cinco años\n    País Circular, 2026\n  \n  \n    +130\n    recicladores de base en certificación de competencias REP\n    Ministerio del Medio Ambiente, 2023\n  \n  \n    60%\n    de quienes integran el gremio nacional de recicladores son mujeres\n    ANARCH, 2020"
   },
   {
-    "objectID": "vina.html#mapa-del-territorio",
-    "href": "vina.html#mapa-del-territorio",
-    "title": "Caso piloto: Viña del Mar",
-    "section": "Mapa del territorio",
-    "text": "Mapa del territorio\nPuntos limpios, cooperativas y actores clave en la cadena del reciclaje de Viña del Mar. Esta es la infraestructura que PET CLOUD conectaría con datos trazables.\n\n\n  Punto limpio operativo\n  Punto limpio no operativo\n  Cooperativa / actor clave\n  Institución municipal\n\n\nHallazgos del territorio"
+    "objectID": "vina.html#el-sistema-en-el-mapa",
+    "href": "vina.html#el-sistema-en-el-mapa",
+    "title": "Viña del Mar",
+    "section": "El sistema en el mapa",
+    "text": "El sistema en el mapa\nLa cadena viñamarina del reciclaje es un sistema sociotécnico distribuido: cooperativas que recolectan y clasifican, puntos limpios que concentran material, campanas de vidrio en las esquinas, y una Dirección de Medio Ambiente que debe reportar al nivel central. Cada nodo del mapa produce información — pesos, volúmenes, frecuencias — que hoy no se registra de forma trazable en ningún punto de la cadena.\n\n\n  Punto limpio operativo\n  Punto limpio no operativo\n  Cooperativa\n  Institución municipal\n\n\nUbicaciones referenciales según información pública disponible.\nDiagnóstico estructural"
   },
   {
-    "objectID": "vina.html#lo-que-la-investigación-de-emilio-reveló",
-    "href": "vina.html#lo-que-la-investigación-de-emilio-reveló",
-    "title": "Caso piloto: Viña del Mar",
-    "section": "Lo que la investigación de Emilio reveló",
-    "text": "Lo que la investigación de Emilio reveló\nLa tesis “Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920” (Bustos Azúa, 2024) entrevistó a cinco recicladoras de base — Camila, Myriam, Maritza, Rosa y Javiera — y documentó con precisión las tres fallas estructurales que PET CLOUD intenta resolver desde la tecnología.\n\nSin espacio de acopio ni infraestructura\nLa totalidad de las entrevistadas señaló operar desde sus hogares o espacios improvisados, en conflicto permanente con vecinos y sin condiciones sanitarias básicas.\n\n\n“Lo que más se necesita es un lugar de acopio. No poder reciclar cerca de la casa dificulta mucho porque sanidad es lo primero que debemos tener.” — Maritza, recicladora de base, Valparaíso · en Bustos Azúa (2024)\n\n\nLa Ley REP exige lo que no existe\nLos requisitos de certificación y registro de la Ley 20.920 suponen recursos, tiempo e infraestructura que las recicladoras no tienen — especialmente las mujeres con doble carga de trabajo.\n\n\n“La ley suena linda, pero no tenemos acceso a nada. Nos piden certificaciones, nos piden cumplir con cosas que no podemos, porque no hay infraestructura ni recursos para nosotras.” — Maritza · en Bustos Azúa (2024)\n\n\nEl dato de pesaje no existe como tal\nLos pesajes son informales, no trazables y no acumulables. Sin un registro verificable, el trabajo de las cooperativas es invisible para el municipio, la DIMAO y el Ministerio del Medio Ambiente.\n\n\n“Nos exigen cosas que parecen para empresas grandes. ¿Cómo vamos a certificar algo si ni siquiera tenemos un baño?” — Myriam, presidenta de asociación de recicladores · en Bustos Azúa (2024)\n\nCómo PET CLOUD responde"
+    "objectID": "vina.html#tres-brechas-del-sistema",
+    "href": "vina.html#tres-brechas-del-sistema",
+    "title": "Viña del Mar",
+    "section": "Tres brechas del sistema",
+    "text": "Tres brechas del sistema\nLa investigación territorial disponible sobre las comunas de Valparaíso y Viña del Mar permite identificar tres brechas estructurales entre la infraestructura física del reciclaje y la infraestructura de información que la Ley REP exige:\n\nEl dato nace y muere en el mismo lugar\nEl pesaje ocurre en la ruta, en el punto limpio o en el acopio, pero se registra en papel o no se registra. El material recuperado se contabiliza recién al final de la cadena de valorización, de forma agregada, con desfases de meses. La eficiencia de cada punto y cada ruta es estructuralmente invisible para quien administra el sistema.\n\n\nLa certificación presupone lo que no existe\nLos procesos de formalización de la Ley 20.920 exigen evidencia documentada del trabajo realizado. Pero producir esa evidencia requiere infraestructura, tiempo y capacidades administrativas que el sector — mayoritariamente femenino y con doble jornada de trabajo remunerado y de cuidados — no tiene cómo costear. El requisito diseñado para incluir opera, en la práctica, como barrera de entrada.\n\n\nTrabajo real, reconocimiento imposible\nSin registro verificable, las toneladas que las cooperativas recuperan no existen para efectos de convenios municipales, fondos públicos ni metas ministeriales. La brecha de datos no es un problema técnico menor: es el mecanismo concreto por el cual un trabajo esencial permanece institucionalmente invisible."
   },
   {
-    "objectID": "vina.html#del-hallazgo-al-diseño",
-    "href": "vina.html#del-hallazgo-al-diseño",
-    "title": "Caso piloto: Viña del Mar",
-    "section": "Del hallazgo al diseño",
-    "text": "Del hallazgo al diseño\nLa tesis de Emilio no es solo un antecedente — es el diseño funcional del sistema. Cada barrera documentada tiene una respuesta directa en la arquitectura de PET CLOUD:\n\n\n\n\n\n\n\nBarrera documentada\nRespuesta de PET CLOUD\n\n\n\n\nSin registro verificable de pesajes\nPWA de registro offline-first + dato inmutable en Firestore\n\n\nFormalización imposible sin evidencia\nActas REP en PDF con folio, generadas automáticamente\n\n\nDIMAO sin datos en tiempo real\nDashboard de metas REP con estados por punto del territorio\n\n\nTrabajo invisible para el Estado\nTrazabilidad georreferenciada que convierte el kilo físico en dato certificado\n\n\n\nEl piloto de 8 semanas propuesto para la Región de Valparaíso parte con las cooperativas que ya operan en este mapa — COGESTA en Reñaca Alto es el punto de entrada más natural, por su perfil (mujeres, Ley REP, educación ambiental) y su disposición documentada a la formalización."
+    "objectID": "vina.html#lo-que-este-territorio-le-enseña-al-diseño",
+    "href": "vina.html#lo-que-este-territorio-le-enseña-al-diseño",
+    "title": "Viña del Mar",
+    "section": "Lo que este territorio le enseña al diseño",
+    "text": "Lo que este territorio le enseña al diseño\nPET CLOUD no parte de la tecnología hacia el territorio, sino al revés. El diagnóstico territorial define los requisitos del sistema: si el pesaje ocurre en ruta y sin señal, el registro debe ser móvil y offline-first; si la certificación exige evidencia, el dato debe ser inmutable y auditable desde su origen; si el reconocimiento depende de reportabilidad, las Actas REP deben generarse automáticamente desde la masa verificada. Cada componente de la arquitectura responde a una brecha documentada, no a una funcionalidad imaginada."
   },
   {
-    "objectID": "vina.html#referencias-del-territorio",
-    "href": "vina.html#referencias-del-territorio",
-    "title": "Caso piloto: Viña del Mar",
-    "section": "Referencias del territorio",
-    "text": "Referencias del territorio\n\nBustos Azúa, J. E. (2024). Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920. Universidad de Playa Ancha.\nMinisterio del Medio Ambiente (2023). Municipio de Viña del Mar y Seremi inician proyecto en apoyo a recicladores de base.\nPaís Circular (2026). Recicladores de base organizados: en cinco años cooperativas dan salto de 6 a 47.\nMunicipalidad de Viña del Mar (2025). Viña del Mar alcanzó un 23% de reciclaje en 2024."
+    "objectID": "vina.html#fundamento",
+    "href": "vina.html#fundamento",
+    "title": "Viña del Mar",
+    "section": "Fundamento",
+    "text": "Fundamento\nEl diagnóstico territorial de esta página se fundamenta en Bustos Azúa (2024), investigación cualitativa desarrollada en la Universidad de Playa Ancha sobre las barreras de género en la implementación de la Ley 20.920 en las comunas de Valparaíso y Viña del Mar, complementada con fuentes públicas municipales y sectoriales.\n\nBustos Azúa, J. E. (2024). Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920 (Ley REP). Trabajo de titulación, Universidad de Playa Ancha.\nMinisterio del Medio Ambiente (2023). Proyecto de apoyo a recicladores de base de Viña del Mar.\nMunicipalidad de Viña del Mar (2025). Balance de gestión: 23% de reciclaje comunal en 2024.\nPaís Circular (2026). Alianzas impulsan aumento de cooperativas de recicladores de base a nivel nacional."
+  },
+  {
+    "objectID": "proyecto.html",
+    "href": "proyecto.html",
+    "title": "El proyecto",
+    "section": "",
+    "text": "La entrada en vigencia de las metas de recolección de la Ley 20.920 impone a municipios y Sistemas de Gestión una presión regulatoria sin precedentes, sobre tres fallas estructurales:\n\nLa “caja negra” del reciclaje. Las toneladas se reportan agregadas al final de la cadena; la eficiencia de puntos limpios y micro-rutas específicas es invisible.\nEl desfase analógico. Minutas de papel y planillas Excel generan hasta 90 días de retraso en la consolidación de informes.\nVulnerabilidad del dato. Los registros manuales carecen de garantías de no adulteración ante auditorías del MMA o la SMA.\n\nSiguiendo a Kitchin (2014) y Townsend (2013), una ciudad inteligente no se define por sensores de alto costo, sino por su capacidad de integrar flujos de información distribuidos. Y siguiendo a Simondon, PET CLOUD no reemplaza el conocimiento empírico del reciclador por un algoritmo ciego: amplifica su rol socioterritorial traduciendo su trabajo diario en datos certificados que la burocracia estatal reconoce."
+  },
+  {
+    "objectID": "proyecto.html#diagnóstico",
+    "href": "proyecto.html#diagnóstico",
+    "title": "El proyecto",
+    "section": "",
+    "text": "La entrada en vigencia de las metas de recolección de la Ley 20.920 impone a municipios y Sistemas de Gestión una presión regulatoria sin precedentes, sobre tres fallas estructurales:\n\nLa “caja negra” del reciclaje. Las toneladas se reportan agregadas al final de la cadena; la eficiencia de puntos limpios y micro-rutas específicas es invisible.\nEl desfase analógico. Minutas de papel y planillas Excel generan hasta 90 días de retraso en la consolidación de informes.\nVulnerabilidad del dato. Los registros manuales carecen de garantías de no adulteración ante auditorías del MMA o la SMA.\n\nSiguiendo a Kitchin (2014) y Townsend (2013), una ciudad inteligente no se define por sensores de alto costo, sino por su capacidad de integrar flujos de información distribuidos. Y siguiendo a Simondon, PET CLOUD no reemplaza el conocimiento empírico del reciclador por un algoritmo ciego: amplifica su rol socioterritorial traduciendo su trabajo diario en datos certificados que la burocracia estatal reconoce."
+  },
+  {
+    "objectID": "proyecto.html#objetivo-general",
+    "href": "proyecto.html#objetivo-general",
+    "title": "El proyecto",
+    "section": "Objetivo general",
+    "text": "Objetivo general\nFortalecer la gobernanza, fiscalización y eficiencia de los sistemas de reciclaje municipal en Chile mediante un dispositivo tecnológico descentralizado, transparente y basado en el trabajo formalizado de cooperativas de recicladores de base."
+  },
+  {
+    "objectID": "proyecto.html#objetivos-específicos-y-resultados-esperados",
+    "href": "proyecto.html#objetivos-específicos-y-resultados-esperados",
+    "title": "El proyecto",
+    "section": "Objetivos específicos y resultados esperados",
+    "text": "Objetivos específicos y resultados esperados\n\n\n\n\n\n\n\n\nObjetivo\nProducto\nIndicador de éxito\n\n\n\n\nOE1 Arquitectura de datos\nEsquema NoSQL + firestore.rules que bloquean update y delete en pesajes\n100% de intentos de alteración bloqueados en backend\n\n\nOE2 Interfaces MVP\nPWA de pesaje + Dashboard con Maps API y Firebase Auth\nCarga inicial &lt; 3 s en gama baja\n\n\nOE3 Resiliencia de datos\nSincronización asíncrona offline testeada\nCero pérdida de registros al recuperar señal\n\n\nOE4 Pilotaje en terreno\nProtocolo de piloto de 8 semanas\n≥ 1 carta de intención (municipio o cooperativa)\n\n\nOE5 Automatización\nActas REP y Certificados PDF automáticos\nReporte mensual con folios en &lt; 5 s"
+  },
+  {
+    "objectID": "proyecto.html#medición-de-impacto",
+    "href": "proyecto.html#medición-de-impacto",
+    "title": "El proyecto",
+    "section": "Medición de impacto",
+    "text": "Medición de impacto\nTasa de Eficiencia de Recolección Territorial (TERT). Porcentaje de puntos que transitan de Pendiente a Recolectado sobre el total catastrado en el periodo:\n\\[TERT = \\frac{P_{recolectados}}{P_{totales}} \\times 100\\]\nMitigación de emisiones equivalentes. CO₂e evitado al desviar PET de vertederos hacia valorización, usando la masa exacta e inmutable registrada en plataforma:\n\\[CO_2e_{evitado} = M_{PET} \\times F_{emisión}\\]\ndonde \\(M_{PET}\\) es el acumulado neto verificable de kilogramos recuperados y \\(F_{emisión}\\) el factor de ciclo de vida evitado por kg reciclado versus resina virgen."
+  },
+  {
+    "objectID": "proyecto.html#cronograma",
+    "href": "proyecto.html#cronograma",
+    "title": "El proyecto",
+    "section": "Cronograma",
+    "text": "Cronograma\nFase 1 (meses 1–2): Cierre técnico del MVP — reglas de inmutabilidad, pruebas offline, validación académica.\nFase 2 (meses 3–4): Red de alianzas — presentaciones a DIMAO y Secpla, talleres de codiseño con cooperativas, postulación a fondos.\nFase 3 (meses 5–6): Piloto y reportabilidad — despliegue de 8 semanas, auditoría de inmutabilidad, primeras Actas REP, informe de resiliencia de datos."
+  },
+  {
+    "objectID": "proyecto.html#referencias",
+    "href": "proyecto.html#referencias",
+    "title": "El proyecto",
+    "section": "Referencias",
+    "text": "Referencias\n\nKitchin, R. (2014). The Real-Time City? Big Data and Urbanism. GeoJournal, 79(1), 1–14.\nMinisterio del Medio Ambiente de Chile (2016). Ley 20.920 (Ley REP).\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nTownsend, A. M. (2013). Smart Cities: Big Data, Civic Hackers, and the Quest for a New Utopia. Norton."
   },
   {
     "objectID": "pac.html",
@@ -60,28 +109,35 @@
     "href": "pac.html#el-territorio-en-el-mapa",
     "title": "Pedro Aguirre Cerda",
     "section": "El territorio en el mapa",
-    "text": "El territorio en el mapa\n\n\n  Punto limpio\n  Gran generador de residuos\n  Institución / hito territorial\n\n\nUbicaciones referenciales según información pública disponible; a validar con la Dirección de Medio Ambiente.\nLa oportunidad"
+    "text": "El territorio en el mapa\n\n\n  Punto limpio\n  Gran generador de residuos\n  Institución / hito territorial\n\n\nCoordenadas verificadas con Google Places (julio 2026).\nLa oportunidad"
   },
   {
     "objectID": "pac.html#lo-que-pac-tiene-y-lo-que-le-falta",
     "href": "pac.html#lo-que-pac-tiene-y-lo-que-le-falta",
     "title": "Pedro Aguirre Cerda",
     "section": "Lo que PAC tiene y lo que le falta",
-    "text": "Lo que PAC tiene y lo que le falta\n\nTiene: infraestructura y voluntad política\nCuatro puntos limpios, un programa domiciliario en expansión al 100% de cobertura, convenio activo con un Gran Sistema de Gestión (ReSimple vía MSUR), y certificación ambiental municipal. Pedro Aguirre Cerda está entre las comunas del sur de Santiago que más ha invertido en la transición hacia la economía circular.\n\n\nTiene: escala manejable y densidad ideal para pilotar\n9,4 km² completamente urbanos, 104 mil habitantes, distancias cortas entre puntos. Es el territorio perfecto para un piloto de trazabilidad: suficientemente denso para generar datos significativos, suficientemente acotado para controlarlo en 8 semanas.\n\n\nLe falta: la capa de datos en origen\nLas 405 toneladas recuperadas en 2025 se conocen de forma agregada, al final de la cadena. Ningún actor del sistema puede responder hoy con evidencia auditable: ¿qué punto rinde más?, ¿qué ruta es más eficiente?, ¿cuántos kilos aportó cada recuperador?, ¿cómo evoluciona el cumplimiento REP semana a semana? Esa es exactamente la capa que PET CLOUD construye."
+    "text": "Lo que PAC tiene y lo que le falta\n\nTiene: infraestructura y voluntad política\nCuatro puntos limpios, un programa domiciliario en expansión al 100% de cobertura, convenio activo con un Gran Sistema de Gestión (ReSimple vía MSUR), y certificación ambiental municipal. Pedro Aguirre Cerda está entre las comunas del sur de Santiago que más ha invertido en la transición hacia la economía circular.\n\n\nTiene: escala manejable y densidad ideal para pilotar\n9,4 km² completamente urbanos, 104 mil habitantes, distancias cortas entre puntos. Es el territorio perfecto para un piloto de trazabilidad: suficientemente denso para generar datos significativos, suficientemente acotado para controlarlo en 8 semanas.\n\n\nLe falta: la capa de datos en origen\nLas 405 toneladas recuperadas en 2025 se conocen de forma agregada, al final de la cadena. Ningún actor del sistema puede responder hoy con evidencia auditable: ¿qué punto rinde más?, ¿qué ruta es más eficiente?, ¿cuántos kilos aportó cada recuperador?, ¿cómo evoluciona el cumplimiento REP semana a semana? Esa es exactamente la capa que PET CLOUD construye.\n\nValor diferencial"
+  },
+  {
+    "objectID": "pac.html#el-enfoque-de-género-como-dimensión-de-diseño",
+    "href": "pac.html#el-enfoque-de-género-como-dimensión-de-diseño",
+    "title": "Pedro Aguirre Cerda",
+    "section": "El enfoque de género como dimensión de diseño",
+    "text": "El enfoque de género como dimensión de diseño\nLa evidencia nacional indica que alrededor del 60% de quienes ejercen el reciclaje de base son mujeres, y la investigación disponible sobre la implementación de la Ley REP (Bustos Azúa, 2024) documenta que sus mecanismos de formalización — certificación, registro, evidencia documentada del trabajo — operan en la práctica como barreras diferenciadas: presuponen tiempo, infraestructura y capacidad administrativa que la doble jornada de trabajo remunerado y de cuidados hace especialmente inaccesibles para las mujeres del sector.\nPET CLOUD traduce ese diagnóstico en diseño, no en declaración:\n\nEl registro en origen produce automáticamente la evidencia que la certificación exige, sin trámites adicionales: cada pesaje georreferenciado e inmutable es, en sí mismo, un respaldo verificable del trabajo realizado.\nEl trabajo se vuelve individualmente atribuible: el sistema registra quién recuperó qué, permitiendo que el aporte de cada recicladora deje de diluirse en cifras agregadas donde históricamente se invisibiliza.\nEl piloto puede incorporar indicadores con perspectiva de género — participación, kilos registrados y acceso a certificación desagregados por género — entregando al municipio una línea base medible para sus propios instrumentos de equidad y para postulaciones a fondos con criterios de género.\n\nPara una Dirección de Medio Ambiente, esto significa poder reportar no solo toneladas, sino inclusión verificable: un dato que hoy ningún municipio de Chile puede producir."
   },
   {
     "objectID": "pac.html#qué-proponemos-al-municipio",
     "href": "pac.html#qué-proponemos-al-municipio",
     "title": "Pedro Aguirre Cerda",
     "section": "Qué proponemos al municipio",
-    "text": "Qué proponemos al municipio\nUn piloto de 8 semanas sin costo de software, consistente en:\n\nRegistro digital de pesajes en origen en uno o dos puntos limpios de la comuna, mediante la PWA de PET CLOUD operada por el personal del punto o recicladores de base del territorio, con geolocalización y funcionamiento sin señal.\nDato inmutable desde el primer día: cada pesaje queda sellado en el backend — sin posibilidad de modificación ni borrado — construyendo un historial auditable ante el MMA y la SMA.\nDashboard para la Dirección de Medio Ambiente con el avance en tiempo real: kilos por punto, por material y por período, exportable para reportes y postulaciones a fondos (Fondo para el Reciclaje, convenios SIG).\nInforme final de resiliencia y proyección: evaluación conjunta de resultados y hoja de ruta para escalar al resto de la red comunal.\n\nEl aprendizaje del ecosistema de Viña del Mar — donde las cooperativas se cuadruplicaron en cinco años pero el dato de origen sigue sin existir — indica que la ventana de oportunidad está en instalar la trazabilidad antes de que la fiscalización REP la exija, no después."
+    "text": "Qué proponemos al municipio\nUn piloto de 8 semanas sin costo de software, consistente en:\n\nRegistro digital de pesajes en origen en uno o dos puntos limpios de la comuna, mediante la PWA de PET CLOUD operada por el personal del punto o recicladores de base del territorio, con geolocalización y funcionamiento sin señal.\nDato inmutable desde el primer día: cada pesaje queda sellado en el backend — sin posibilidad de modificación ni borrado — construyendo un historial auditable ante el MMA y la SMA.\nDashboard para la Dirección de Medio Ambiente con el avance en tiempo real: kilos por punto, por material y por período, exportable para reportes y postulaciones a fondos (Fondo para el Reciclaje, convenios SIG).\nIndicadores con enfoque de género (opcional, definido junto al municipio): línea base de participación y aporte desagregado por género, con consentimiento informado de las personas participantes.\nInforme final de resiliencia y proyección: evaluación conjunta de resultados y hoja de ruta para escalar al resto de la red comunal.\n\nEl aprendizaje del ecosistema de Viña del Mar — donde las cooperativas se cuadruplicaron en cinco años pero el dato de origen sigue sin existir — indica que la ventana de oportunidad está en instalar la trazabilidad antes de que la fiscalización REP la exija, no después."
   },
   {
     "objectID": "pac.html#fuentes",
     "href": "pac.html#fuentes",
     "title": "Pedro Aguirre Cerda",
     "section": "Fuentes",
-    "text": "Fuentes\n\nInstituto Nacional de Estadísticas (2024). Proyecciones de población comunal.\nMSUR (2025). Pedro Aguirre Cerda y Msur: avanzando juntos hacia el 100% de cobertura del programa de reciclaje comunal.\nMunicipalidad de Pedro Aguirre Cerda. Punto Limpio comunal y programa de reciclaje; Nuestra Comuna.\nSantiago Recicla — MMA (2018). Construcción de Red de Puntos Limpios para la RMS.\nBiblioteca del Congreso Nacional (2024–2025). Reportes estadísticos comunales: Pedro Aguirre Cerda."
+    "text": "Fuentes\n\nBustos Azúa, J. E. (2024). Recicladoras de base en las comunas de Valparaíso y Viña del Mar: Barreras de género en el contexto de la implementación de la Ley 20.920 (Ley REP). Trabajo de titulación, Universidad de Playa Ancha.\nInstituto Nacional de Estadísticas (2024). Proyecciones de población comunal.\nMSUR (2025). Pedro Aguirre Cerda y Msur: avanzando juntos hacia el 100% de cobertura del programa de reciclaje comunal.\nMunicipalidad de Pedro Aguirre Cerda. Punto Limpio comunal y programa de reciclaje; Nuestra Comuna.\nSantiago Recicla — MMA (2018). Construcción de Red de Puntos Limpios para la RMS.\nBiblioteca del Congreso Nacional (2024–2025). Reportes estadísticos comunales: Pedro Aguirre Cerda."
   },
   {
     "objectID": "colaboracion.html",
@@ -95,14 +151,14 @@
     "href": "colaboracion.html#equipo",
     "title": "Colaboración",
     "section": "Equipo",
-    "text": "Equipo\n\nEmilio Bustos Azúa — Sociólogo, Universidad de Playa Ancha.\n\n\nÁngel Muñoz — Licenciado en Sociología, Universidad Alberto Hurtado."
+    "text": "Equipo\n\n\n\n\n\n\nAM Ángel Muñoz\nSociólogo · Universidad Alberto Hurtado\n\n\nEB Emilio Bustos Azúa\nSociólogo · Universidad de Playa Ancha"
   },
   {
     "objectID": "colaboracion.html#contacto",
     "href": "colaboracion.html#contacto",
     "title": "Colaboración",
     "section": "Contacto",
-    "text": "Contacto\n✉ anmunozr@alumnos.uahurtado.cl"
+    "text": "Contacto\n✉ Envíanos un correo"
   },
   {
     "objectID": "arquitectura.html#componentes",
@@ -165,7 +221,7 @@
     "href": "index.html#quiénes-estamos-detrás",
     "title": "El reciclaje municipal, trazable e inmutable desde el pesaje en origen",
     "section": "Quiénes estamos detrás",
-    "text": "Quiénes estamos detrás\n\n\nEB Emilio Bustos Azúa\nSociólogo · Universidad de Playa Ancha\n\n\n\n\nAM Ángel Muñoz\nLicenciado en Sociología · Universidad Alberto Hurtado"
+    "text": "Quiénes estamos detrás\n\n\n\n\n\n\nAM Ángel Muñoz\nSociólogo · Universidad Alberto Hurtado\n\n\nEB Emilio Bustos Azúa\nSociólogo · Universidad de Playa Ancha"
   },
   {
     "objectID": "index.html#tu-comuna-quiere-datos-de-reciclaje-que-resistan-cualquier-auditoría",
@@ -175,52 +231,59 @@
     "text": "¿Tu comuna quiere datos de reciclaje que resistan cualquier auditoría?\nConversemos. El piloto está diseñado para partir en la Región de Valparaíso, pero el modelo escala a cualquier gobierno local de Chile.\nEscríbenos"
   },
   {
-    "objectID": "proyecto.html",
-    "href": "proyecto.html",
-    "title": "El proyecto",
-    "section": "",
-    "text": "La entrada en vigencia de las metas de recolección de la Ley 20.920 impone a municipios y Sistemas de Gestión una presión regulatoria sin precedentes, sobre tres fallas estructurales:\n\nLa “caja negra” del reciclaje. Las toneladas se reportan agregadas al final de la cadena; la eficiencia de puntos limpios y micro-rutas específicas es invisible.\nEl desfase analógico. Minutas de papel y planillas Excel generan hasta 90 días de retraso en la consolidación de informes.\nVulnerabilidad del dato. Los registros manuales carecen de garantías de no adulteración ante auditorías del MMA o la SMA.\n\nSiguiendo a Kitchin (2014) y Townsend (2013), una ciudad inteligente no se define por sensores de alto costo, sino por su capacidad de integrar flujos de información distribuidos. Y siguiendo a Simondon, PET CLOUD no reemplaza el conocimiento empírico del reciclador por un algoritmo ciego: amplifica su rol socioterritorial traduciendo su trabajo diario en datos certificados que la burocracia estatal reconoce."
+    "objectID": "protocolo.html#pregunta-de-investigación-propuesta-v1",
+    "href": "protocolo.html#pregunta-de-investigación-propuesta-v1",
+    "title": "Protocolo de investigación",
+    "section": "1 · Pregunta de investigación (propuesta v1)",
+    "text": "1 · Pregunta de investigación (propuesta v1)\nPregunta central: ¿En qué medida y bajo qué condiciones un sistema de trazabilidad inmutable del pesaje en origen modifica (a) la capacidad de reportabilidad REP de un municipio y (b) la visibilidad institucional del trabajo de recuperación de residuos, en el contexto de un piloto comunal?\nSubpreguntas:\n\n¿Qué brechas existen entre los registros del método vigente (papel/planillas) y el registro digital en origen? (dimensión técnica — se responde con la semana sombra)\n¿Qué apropiaciones, resistencias y usos no previstos despliegan las personas operarias frente a la herramienta? (dimensión sociotécnica — bitácora + observación)\n¿Qué usos efectivos hace la contraparte municipal de los datos disponibles en tiempo real? (dimensión institucional — comités quincenales)\n¿Operan de manera diferenciada por género las barreras de adopción y los beneficios de certificación del trabajo? (dimensión de género — solo si el componente opcional del piloto se activa con consentimientos)\n\nCriterio de adecuación: la pregunta se reevalúa al cierre de E2. Si la muestra efectiva resulta menor a lo previsto (p. ej., menos de 4 operarios activos), las subpreguntas 2 y 4 se reformulan hacia estudio de caso en profundidad y se abandona toda pretensión de generalización."
   },
   {
-    "objectID": "proyecto.html#diagnóstico",
-    "href": "proyecto.html#diagnóstico",
-    "title": "El proyecto",
-    "section": "",
-    "text": "La entrada en vigencia de las metas de recolección de la Ley 20.920 impone a municipios y Sistemas de Gestión una presión regulatoria sin precedentes, sobre tres fallas estructurales:\n\nLa “caja negra” del reciclaje. Las toneladas se reportan agregadas al final de la cadena; la eficiencia de puntos limpios y micro-rutas específicas es invisible.\nEl desfase analógico. Minutas de papel y planillas Excel generan hasta 90 días de retraso en la consolidación de informes.\nVulnerabilidad del dato. Los registros manuales carecen de garantías de no adulteración ante auditorías del MMA o la SMA.\n\nSiguiendo a Kitchin (2014) y Townsend (2013), una ciudad inteligente no se define por sensores de alto costo, sino por su capacidad de integrar flujos de información distribuidos. Y siguiendo a Simondon, PET CLOUD no reemplaza el conocimiento empírico del reciclador por un algoritmo ciego: amplifica su rol socioterritorial traduciendo su trabajo diario en datos certificados que la burocracia estatal reconoce."
+    "objectID": "protocolo.html#matriz-de-revisión-de-literatura",
+    "href": "protocolo.html#matriz-de-revisión-de-literatura",
+    "title": "Protocolo de investigación",
+    "section": "2 · Matriz de revisión de literatura",
+    "text": "2 · Matriz de revisión de literatura\nCinco ejes. Meta: 8–12 referencias sólidas por eje antes del kickoff de E3; responsable alterna por eje; registro en Zotero compartido (crear grupo “PET CLOUD”).\n\n\n\n\n\n\n\n\n\nEje\nBase ya identificada\nQué falta buscar\nDónde\n\n\n\n\nReciclaje inclusivo y recicladores de base\nDias & Ogando; Navarrete-Hernández; Ogando & Roever; Bustos Azúa (2024)\nCasos LATAM de digitalización del reciclaje de base; evaluaciones de programas de formalización\nWIEGO, SciELO, Scopus\n\n\nImplementación Ley REP\nBCN; MMA (2021, 2022); Suazo (2017)\nLiteratura gris post-2023: informes SMA, evaluaciones de metas, anuarios Latitud R\nRepositorios MMA/SMA, Latitud R\n\n\nGobernanza de datos urbanos y GovTech\nKitchin (2014); Townsend (2013)\nGovTech municipal en LATAM; crítica al solucionismo (Morozov); datos y rendición de cuentas local\nScopus, SSRN, BID/CAF publicaciones\n\n\nSociología de la tecnología\nSimondon (2007); Bourdieu (2001)\nSociología de la traducción (Callon, Latour) para el paper 1; estudios de apropiación tecnológica en trabajo popular\nJSTOR, SciELO\n\n\nGénero y trabajo informal\nCrenshaw; Federici; Fundación Sol; Uribe-Echevarría\nTecnología y trabajo femenino informal; brecha digital de género en Chile (Subtel/ONU Mujeres)\nSciELO, CEPAL, ONU Mujeres"
   },
   {
-    "objectID": "proyecto.html#objetivo-general",
-    "href": "proyecto.html#objetivo-general",
-    "title": "El proyecto",
-    "section": "Objetivo general",
-    "text": "Objetivo general\nFortalecer la gobernanza, fiscalización y eficiencia de los sistemas de reciclaje municipal en Chile mediante un dispositivo tecnológico descentralizado, transparente y basado en el trabajo formalizado de cooperativas de recicladores de base."
+    "objectID": "protocolo.html#caracterización-de-la-muestra-y-datos-del-piloto",
+    "href": "protocolo.html#caracterización-de-la-muestra-y-datos-del-piloto",
+    "title": "Protocolo de investigación",
+    "section": "3 · Caracterización de la muestra y datos del piloto",
+    "text": "3 · Caracterización de la muestra y datos del piloto\nUnidades de observación:\n\nPuntos de registro: 1–2 puntos limpios (según convenio). Caracterizar: ubicación, materiales, flujo histórico estimado, dotación.\nPersonas operarias: universo completo del punto (censo, no muestra). Caracterizar con ficha breve al inicio: edad, género (opcional), años en la actividad, tipo de vínculo (municipal / cooperativa / independiente), dispositivo propio o compartido.\nRegistros de pesaje: la totalidad de la serie de 8 semanas (datos del sistema).\nActores institucionales: contraparte DIMAO y quienes participen de comités (registro en bitácora).\n\nInstrumentos: registro del sistema (cuantitativo continuo) · semana sombra papel-vs-app (validación) · ficha inicial de participantes · encuesta breve de usabilidad y percepción al cierre (E4) · bitácora de investigación (cualitativo longitudinal) · minutas de comités quincenales.\nÉtica: consentimiento informado E0 cubre todos los instrumentos; datos personales se reportan solo agregados; el género es opcional con consentimiento separado; derecho a retiro sin consecuencias laborales, garantizado por la cláusula de no uso disciplinario."
   },
   {
-    "objectID": "proyecto.html#objetivos-específicos-y-resultados-esperados",
-    "href": "proyecto.html#objetivos-específicos-y-resultados-esperados",
-    "title": "El proyecto",
-    "section": "Objetivos específicos y resultados esperados",
-    "text": "Objetivos específicos y resultados esperados\n\n\n\n\n\n\n\n\nObjetivo\nProducto\nIndicador de éxito\n\n\n\n\nOE1 Arquitectura de datos\nEsquema NoSQL + firestore.rules que bloquean update y delete en pesajes\n100% de intentos de alteración bloqueados en backend\n\n\nOE2 Interfaces MVP\nPWA de pesaje + Dashboard con Maps API y Firebase Auth\nCarga inicial &lt; 3 s en gama baja\n\n\nOE3 Resiliencia de datos\nSincronización asíncrona offline testeada\nCero pérdida de registros al recuperar señal\n\n\nOE4 Pilotaje en terreno\nProtocolo de piloto de 8 semanas\n≥ 1 carta de intención (municipio o cooperativa)\n\n\nOE5 Automatización\nActas REP y Certificados PDF automáticos\nReporte mensual con folios en &lt; 5 s"
+    "objectID": "protocolo.html#mapa-de-entidades-a-quiénes-se-ofrece-el-servicio",
+    "href": "protocolo.html#mapa-de-entidades-a-quiénes-se-ofrece-el-servicio",
+    "title": "Protocolo de investigación",
+    "section": "4 · Mapa de entidades (a quiénes se ofrece el servicio)",
+    "text": "4 · Mapa de entidades (a quiénes se ofrece el servicio)\n\n\n\n\n\n\n\n\n\n\nEntidad\nQué necesita\nQuién decide\nQuién paga\nRiesgo principal\n\n\n\n\nMunicipios (DIMAO)\nReportar metas REP sin exponerse ante SMA; datos para fondos\nDirector/a DIMAO propone; Alcaldía y DAF autorizan gasto\nPresupuesto municipal o Fondo para el Reciclaje\nCiclos políticos y compras lentas\n\n\nSecpla municipal\nProyectos presentables a FNDR/GORE\nSecpla + Alcaldía\nGORE (FNDR)\nHorizonte largo de formulación\n\n\nSIG / Gran Sistema (ReSimple)\nTrazabilidad verificable de lo que financian en comunas\nGerencia de operaciones\nEl propio SIG (obligación legal de financiar gestión)\nPueden preferir desarrollar in-house\n\n\nGestores intermedios (MSUR, EMERES)\nDiferenciarse ante municipios con datos\nGerencia\nIncluido en su contrato municipal\nNos vean como competencia y no como capa\n\n\nCooperativas\nCertificación de su trabajo; posición negociadora\nAsamblea/directiva\nNo pagan: son aliadas y usuarias\nDesconfianza si el sistema parece vigilancia\n\n\nGORE RM\nResultados medibles de inversión (Santiago Recicla)\nGobernador/divisiones\nFNDR\nIntermediación municipal obligatoria\n\n\n\nImplicancia estratégica: hay dos rutas de ingreso distintas — la municipal (lenta, legitimadora) y la de SIG/gestores (más rápida, B2B, pagan por datos que ya están obligados a producir). La feria sirve para testear ambas."
   },
   {
-    "objectID": "proyecto.html#medición-de-impacto",
-    "href": "proyecto.html#medición-de-impacto",
-    "title": "El proyecto",
-    "section": "Medición de impacto",
-    "text": "Medición de impacto\nTasa de Eficiencia de Recolección Territorial (TERT). Porcentaje de puntos que transitan de Pendiente a Recolectado sobre el total catastrado en el periodo:\n\\[TERT = \\frac{P_{recolectados}}{P_{totales}} \\times 100\\]\nMitigación de emisiones equivalentes. CO₂e evitado al desviar PET de vertederos hacia valorización, usando la masa exacta e inmutable registrada en plataforma:\n\\[CO_2e_{evitado} = M_{PET} \\times F_{emisión}\\]\ndonde \\(M_{PET}\\) es el acumulado neto verificable de kilogramos recuperados y \\(F_{emisión}\\) el factor de ciclo de vida evitado por kg reciclado versus resina virgen."
+    "objectID": "protocolo.html#vínculo-investigaciónproducto",
+    "href": "protocolo.html#vínculo-investigaciónproducto",
+    "title": "Protocolo de investigación",
+    "section": "5 · Vínculo investigación–producto",
+    "text": "5 · Vínculo investigación–producto\nCada instrumento del piloto alimenta dos salidas a la vez: el informe institucional (producto comercial) y el corpus de los papers (producción científica). Ninguna medición se hace dos veces; ninguna se hace sin consentimiento. La bitácora es el puente."
   },
   {
-    "objectID": "proyecto.html#cronograma",
-    "href": "proyecto.html#cronograma",
-    "title": "El proyecto",
-    "section": "Cronograma",
-    "text": "Cronograma\nFase 1 (meses 1–2): Cierre técnico del MVP — reglas de inmutabilidad, pruebas offline, validación académica.\nFase 2 (meses 3–4): Red de alianzas — presentaciones a DIMAO y Secpla, talleres de codiseño con cooperativas, postulación a fondos.\nFase 3 (meses 5–6): Piloto y reportabilidad — despliegue de 8 semanas, auditoría de inmutabilidad, primeras Actas REP, informe de resiliencia de datos."
+    "objectID": "sala.html#caja-de-herramientas",
+    "href": "sala.html#caja-de-herramientas",
+    "title": "Sala de trabajo",
+    "section": "Caja de herramientas",
+    "text": "Caja de herramientas\n\n📡 Radar REP — monitor de prensa con IA\nVive en Claude (la IA gratuita solo funciona ahí, no en esta web). Cada uno puede ejecutarlo desde su cuenta: abrir el artifact “radar-rep” en la conversación de PET CLOUD, seleccionar frentes y escanear. Clasifica hallazgos en alertas / oportunidades / contexto y sugiere caminos de acción. Frecuencia sugerida: lunes, 10 minutos, alternando responsable semana por medio.\n\n\n🗂 Repositorio y sitio\nCódigo del sitio: github.com/nglmnz/petcloud-web · Ciclo de publicación: git add . && git commit && git push && quarto publish gh-pages. El código de la app (Firebase) permanece en repositorio privado hasta restringir credenciales.\n\n\n📋 Plan de trabajo\nCarta Gantt, fases, roles y horas en petcloud-plan.xlsx (Drive compartido). Revisión quincenal de avance contra hitos; el hito duro es la semana 6: carta de intención firmada o pivote de territorio.\n\n\n🔬 Protocolo de investigación\nPregunta, matriz de literatura, muestra y mapa de entidades: protocolo.html. Se revisa tras E2, se congela antes de E3."
   },
   {
-    "objectID": "proyecto.html#referencias",
-    "href": "proyecto.html#referencias",
-    "title": "El proyecto",
-    "section": "Referencias",
-    "text": "Referencias\n\nKitchin, R. (2014). The Real-Time City? Big Data and Urbanism. GeoJournal, 79(1), 1–14.\nMinisterio del Medio Ambiente de Chile (2016). Ley 20.920 (Ley REP).\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nTownsend, A. M. (2013). Smart Cities: Big Data, Civic Hackers, and the Quest for a New Utopia. Norton."
+    "objectID": "sala.html#bitácora-de-investigación",
+    "href": "sala.html#bitácora-de-investigación",
+    "title": "Sala de trabajo",
+    "section": "Bitácora de investigación",
+    "text": "Bitácora de investigación\nDónde vive la información: los datos NO se guardan en esta página ni en GitHub — viven en Google Drive con permisos restringidos a nuestras dos cuentas. Esta página solo los enmarca: el documento incrustado abajo únicamente se muestra a quien haya iniciado sesión con una cuenta Google autorizada. Cualquier otra persona que llegue a esta URL verá una pantalla de “solicitar acceso” de Google. La seguridad la pone Google, no GitHub.\n\n\n\nSi ves una pantalla de acceso de Google: inicia sesión con tu cuenta autorizada. Si el recuadro dice DOC_ID, aún falta configurar el documento (instrucciones en el código de esta página).\nEl proceso de PET CLOUD es en sí mismo un objeto de estudio. Registramos semanalmente en la bitácora cuatro tipos de entrada:\n\nDecisiones técnicas y sus razones — cada elección de arquitectura (inmutabilidad, roles, offline) es una decisión sociotécnica documentable: qué alternativas se descartaron y por qué.\nEventos territoriales — reuniones con municipios, cooperativas y SIG: quién estuvo, qué se dijo, qué resistencias y qué traducciones ocurrieron entre el lenguaje técnico y el territorial.\nDatos y anomalías — cuando el piloto arranque: patrones en los pesajes, usos inesperados de la herramienta, apropiaciones y rechazos por parte de las personas usuarias.\nReflexividad del equipo — tensiones entre el rol de investigadores y el de desarrolladores; esto es insumo directo para la discusión metodológica de cualquier paper."
+  },
+  {
+    "objectID": "sala.html#líneas-de-publicación-posibles",
+    "href": "sala.html#líneas-de-publicación-posibles",
+    "title": "Sala de trabajo",
+    "section": "Líneas de publicación posibles",
+    "text": "Líneas de publicación posibles\n\n1. De la barrera al requisito: traducción de un diagnóstico de género en diseño GovTech. Cómo los hallazgos de una investigación cualitativa (Bustos Azúa, 2024) se convirtieron en requisitos de arquitectura de software. Marco: sociología de la traducción + Simondon. Revista candidata: Persona y Sociedad o Polis.\n\n\n2. Trazabilidad e invisibilización: el dato como reconocimiento del trabajo de recicladoras de base. Si el piloto genera datos: análisis de cómo el registro inmutable modifica (o no) la posición de las cooperativas frente al municipio. Requiere consentimientos específicos diseñados desde el inicio del piloto.\n\n\n3. Sistematización del piloto como experiencia de innovación pública desde las ciencias sociales. El proceso completo (esta bitácora) como caso de tecnología cívica desarrollada por sociólogos. Formato: sistematización de experiencias, apta para congresos (ALAS, CIIE) antes que revista.\n\nRegla ética transversal: cualquier uso de datos de personas (pesajes individualizados, entrevistas, encuestas del piloto) requiere consentimiento informado específico para publicación, diseñado antes de la recolección, no después. Lo conversamos con calma antes del kickoff del piloto."
   }
 ]
